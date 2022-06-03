@@ -16,6 +16,17 @@
 </head>
 
 <body style="padding-bottom: -7%;width: 100%;">
+    <div class="containloader"> 
+        <div class="zgroup"> 
+          <div class="bigSqr">
+            <div class="square first"></div>
+            <div class="square second"></div>
+            <div class="square third"></div>
+            <div class="square fourth"></div>
+          </div>
+         
+        </div>
+    </div>
     <nav class="navbar navbar-light navbar-expand-md fixed-top py-3" style="height: 50px;background: rgba(0,0,0,0.6);color: rgb(255,255,255);">
         <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-right: 15px;"><span class="fw-bolder" style="font-family: Abel, sans-serif;font-size: 35px;color: rgba(255,255,255,0.9);text-align: center;width: auto;height: auto;"><strong>Mazhar Rajani</strong><br></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -379,6 +390,20 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script>
+        $(window).on("load",function(){
+            $(".containloader").fadeOut("slow");
+            $(".navbar").show();
+
+    
+        });
+        setTimeout(heightchange, 5000);
+        function heightchange(){
+            document.getElementById("video").style.minHeight="60vh";
+            document.getElementById("video").style.transition="min-height 1s ease-in-out";
+            document.getElementById("video").style.height="60vh";
+        }
+    </script>
 </body>
 
 </html>
