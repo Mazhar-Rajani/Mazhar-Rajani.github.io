@@ -83,12 +83,44 @@ html, body {
   border: none !important;
 }
 
-.btn:focus {
+.btn:focus, .accordion-button:not(.collapsed):focus {
   border: none !important;
   box-shadow: none !important;
 }
 
 .dropdown-item:hover {
   background-color: rgba(255,255,255,0.5);
+}
+
+.accordion-button:focus {
+  border-color: #ffffff00;
+  box-shadow: none;
+}
+
+.work-item-bg:hover {
+  transform: scale(1.1);
+}
+
+.work-item:hover {
+  cursor: pointer;
+  border-color: #94c1e4;
+}
+
+.work-item-title-container {
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 35px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-family: 'Quicksand';
+  /*font-weight: 500;*/
+  color: #fff;
+  font-size: 30px;
 }
 
