@@ -14,402 +14,774 @@
     <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-Dark.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
-<body style="padding-bottom: -7%;width: 100%;">
-    
-    <nav class="navbar navbar-light navbar-expand-md fixed-top py-3" style="height: 50px;background: rgba(0,0,0,0.6);color: rgb(255,255,255);">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-right: 15px;"><span class="fw-bolder" style="font-family: Abel, sans-serif;font-size: 35px;color: rgba(255,255,255,0.9);text-align: center;width: auto;height: auto;"><strong>Mazhar Rajani</strong><br></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<body class="noscroll"style="padding-bottom: -7%;width: 100%;">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-light navbar-expand-md fixed-top py-3"
+        style="height: 50px;background: rgba(0,0,0,0.6);color: rgb(255,255,255); display: none;">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"
+                style="margin-right: 15px;"><span class="fw-bolder"
+                    style="font-family: Abel, sans-serif;font-size: 35px;color: rgba(255,255,255,0.9);text-align: center;width: auto;height: auto;"><strong>Mazhar
+                        Rajani</strong><br></span></a><button data-bs-toggle="collapse" class="navbar-toggler"
+                data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav text-uppercase me-auto" style="font-family: Quicksand, sans-serif;color: rgb(255,255,255);">
-                    <li class="nav-item"><a class="nav-link active" href="#about" style="color: rgb(255,255,255);"><i class="far fa-lightbulb" style="margin-right: 6px;"></i>ABOUT<br></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#professionalprojects" style="color: rgb(255,255,255);"><i class="fas fa-users" style="margin-right: 6px;"></i>PROFESSIONAL PROJECTS<br></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#personalprojects" style="color: rgb(255,255,255);"><i class="fas fa-heart" style="margin-right: 6px;"></i>PERSONAL PROJECTS<br></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#freelanceprojects" style="color: rgb(255,255,255);"><i class="fas fa-project-diagram" style="margin-right: 6px;"></i>FREELANCE PROJECTS<br></a></li>
-                    <li class="nav-item"><a class="nav-link" href="assets/Mazhar_Rajani_Resume.pdf"style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 6px;">
-                                <path d="M9 12H15M9 16H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <ul class="navbar-nav text-uppercase me-auto"
+                    style="font-family: Quicksand, sans-serif;color: rgb(255,255,255);">
+                    <li class="nav-item"><a class="nav-link active" href="#about" style="color: rgb(255,255,255);"><i
+                                class="far fa-lightbulb" style="margin-right: 6px;"></i>ABOUT<br></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#professionalprojects"
+                            style="color: rgb(255,255,255);"><i class="fas fa-users"
+                                style="margin-right: 6px;"></i>PROFESSIONAL PROJECTS<br></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#personalprojects"
+                            style="color: rgb(255,255,255);"><i class="fas fa-heart"
+                                style="margin-right: 6px;"></i>PERSONAL PROJECTS<br></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#freelanceprojects"
+                            style="color: rgb(255,255,255);"><i class="fas fa-project-diagram"
+                                style="margin-right: 6px;"></i>FREELANCE PROJECTS<br></a></li>
+                    <li class="nav-item"><a class="nav-link" href="assets/Mazhar_Rajani_Resume.pdf"
+                            style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 6px;">
+                                <path
+                                    d="M9 12H15M9 16H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
                             </svg>RESUME<br></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: rgb(255,255,255);"><i class="far fa-comments" style="margin-right: 6px;"></i>CONTACT<br></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: rgb(255,255,255);"><i
+                                class="far fa-comments" style="margin-right: 6px;"></i>CONTACT<br></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="containloader"> 
-        <div class="zgroup"> 
-          <div class="bigSqr">
-            <div class="square first"></div>
-            <div class="square second"></div>
-            <div class="square third"></div>
-            <div class="square fourth"></div>
-          </div>
-         
+    <!-- Navbar End -->
+    <!-- Loading Animation Start -->
+    <div class="containloader">
+        <div class="zgroup">
+            <div class="bigSqr">
+                <div class="square first"></div>
+                <div class="square second"></div>
+                <div class="square third"></div>
+                <div class="square fourth"></div>
+            </div>
+
         </div>
     </div>
-    <div id="video" style="height: 100vh;min-height: 100vh;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/edYCtaNueQY?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=edYCtaNueQY&amp;controls=0" width="100vw" height="100vh" style="width: 100%;height: 100%;"></iframe></div>
-    <div id="about" style="background: #062F4F;color: rgb(255,255,255);padding-top: 2%;padding-bottom: 2%;">
-        <h1 class="text-capitalize fw-normal" style="font-family: Abel, sans-serif;text-align: center;font-size: 60px;">About Me</h1>
-        <p id="aboutpara" style="margin-left: 15%;margin-right: 15%;font-family: Quicksand, sans-serif;margin-bottom: 15px;padding-right: 0px;font-size: 16px;text-align: justify;">Hi! I'm Mazhar, an Indian game programmer and designer now employed with Godspeed games. Playing games has always been a passion of mine, and my curiosity about "how these games are developed?" led me to the field of game creation, where I learned about numerous aspects of game design and production. <br><br>Here you can see some of the projects to which I've been able to contribute, as well as some of the personal-fun-projects that I've been working on. When I'm not programming, I like to learn new things, take on new challenges, and spend extra time refining my skills to ensure that the creative vision is realized to the best of my ability, or I spend time with my family.<br><br>Please do not hesitate to contact me if you have any questions :)</p>
+    <!-- Loading Animation End -->
+    <!-- Video Block Start -->
+    <div id="video" style="height: 100vh;min-height: 100vh;"><iframe allowfullscreen="" frameborder="0"
+            src="https://www.youtube.com/embed/edYCtaNueQY?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=edYCtaNueQY&amp;controls=0"
+            width="100vw" height="100vh" style="width: 100%;height: 100%;"></iframe>
     </div>
-    <div id="professionalprojects" style="background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
-        <h1 style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">Professional Projects</h1>
-        <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">Click on the tiles to learn more about each project.</p>
-        <div class="container d-flex justify-content-center align-items-center" style="padding-left: 0%;padding-right: 0%;width: 100%;">
+    <!-- Video Block End -->
+    <!-- About Block start -->
+    <div id="about" style="display:none;background: #062F4F;color: rgb(255,255,255);padding-top: 2%;padding-bottom: 2%;">
+        <h1 class="text-capitalize fw-normal" style="font-family: Abel, sans-serif;text-align: center;font-size: 60px;">
+            About Me</h1>
+        <p id="aboutpara"
+            style="margin-left: 15%;margin-right: 15%;font-family: Quicksand, sans-serif;margin-bottom: 15px;padding-right: 0px;font-size: 16px;text-align: justify;">
+            Hi! I'm Mazhar, an Indian game programmer and designer now employed with Godspeed games. Playing games has
+            always been a passion of mine, and my curiosity about "how these games are developed?" led me to the field
+            of game creation, where I learned about numerous aspects of game design and production. <br><br>Here you can
+            see some of the projects to which I've been able to contribute, as well as some of the personal-fun-projects
+            that I've been working on. When I'm not programming, I like to learn new things, take on new challenges, and
+            spend extra time refining my skills to ensure that the creative vision is realized to the best of my
+            ability, or I spend time with my family.<br><br>Please do not hesitate to contact me if you have any
+            questions :)</p>
+    </div>
+    <!-- About Block End -->
+    <!-- Professinal Projects Start -->
+    <div id="professionalprojects"
+        style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
+        <h1
+            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">
+            Professional Projects</h1>
+        <p
+            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">
+            Click on the tiles to learn more about each project.</p>
+        <div class="container d-flex justify-content-center align-items-center"
+            style="padding-left: 0%;padding-right: 0%;width: 100%;">
             <div class="row gx-3" style="width: 100%;">
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><!-- <img class="projectthumbnail" src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" /> -->
-
-<a href="projects/sampleproject.html">
-    <div class="work-item" style="    height: 350px;
-    border: 1.8px solid;
-    border-color: #545454;
-    border-radius: 5px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    overflow: hidden;">
-	      	<div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                                 position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease-in-out;">
-            </div>
-    <div class="work-item-title-container">
-					        		<div class="work-item-title" >
-					        			<span>Bolt Storm</span>
-					        		</div>
-					        	</div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+<!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (START)-->
+ 
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><!-- <img class="projectthumbnail" src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" /> -->
-
-<a href="projects/sampleproject.html">
-    <div class="work-item" style="    height: 350px;
-    border: 1.8px solid;
-    border-color: #545454;
-    border-radius: 5px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    overflow: hidden;">
-	      	<div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                                 position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease-in-out;">
-            </div>
-    <div class="work-item-title-container">
-					        		<div class="work-item-title" >
-					        			<span>Bolt Storm</span>
-					        		</div>
-					        	</div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><!-- <img class="projectthumbnail" src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" /> -->
-
-<a href="projects/sampleproject.html">
-    <div class="work-item" style="    height: 350px;
-    border: 1.8px solid;
-    border-color: #545454;
-    border-radius: 5px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    overflow: hidden;">
-	      	<div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                                 position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease-in-out;">
             </div>
-    <div class="work-item-title-container">
-					        		<div class="work-item-title"  >
-					        			<span>Bolt Storm</span>
-					        		</div>
-					        	</div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><!-- <img class="projectthumbnail" src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" /> -->
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
 
-<a href="projects/sampleproject.html">
-    <div class="work-item" style="    height: 350px;
-    border: 1.8px solid;
-    border-color: #545454;
-    border-radius: 5px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    overflow: hidden;">
-	      	<div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                                 position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease-in-out;">
-            </div>
-    <div class="work-item-title-container">
-					        		<div class="work-item-title"  >
-					        			<span>Bolt Storm</span>
-					        		</div>
-					        	</div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><!-- <img class="projectthumbnail" src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" /> -->
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
 
-<a href="projects/sampleproject.html">
-    <div class="work-item" style="    height: 350px;
-    border: 1.8px solid;
-    border-color: #545454;
-    border-radius: 5px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    overflow: hidden;">
-	      	<div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                                 position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease-in-out;">
-            </div>
-    <div class="work-item-title-container">
-					        		<div class="work-item-title"  >
-					        			<span>Bolt Storm</span>
-					        		</div>
-					        	</div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><!-- <img class="projectthumbnail" src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" /> -->
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
+                </div>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
 
-<a href="projects/sampleproject.html">
-    <div class="work-item" style="    height: 350px;
-    border: 1.8px solid;
-    border-color: #545454;
-    border-radius: 5px;
-    position: relative;
-    transition: all .3s ease-in-out;
-    overflow: hidden;">
-	      	<div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                                 position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease-in-out;">
-            </div>
-    <div class="work-item-title-container">
-					        		<div class="work-item-title"  >
-					        			<span>Bolt Storm</span>
-					        		</div>
-					        	</div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
                 </div>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
+                </div>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
+
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
+                </div>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
+                </div>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
+
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
+                </div>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
+                </div>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
+
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+
+<!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (END)-->
             </div>
         </div>
     </div>
-    <div id="personalprojects" style="background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
-        <h1 style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">Personal Projects</h1>
-        <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">Click on the tiles to learn more about each project.</p>
-        <div class="container d-flex justify-content-center align-items-center" style="padding-left: 0%;padding-right: 0%;width: 100%;">
+    <!-- Professinal Projects End -->
+    <!-- Personal Projects Start -->
+    <div id="personalprojects"
+        style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
+        <h1
+            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">
+            Personal Projects</h1>
+        <p
+            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">
+            Click on the tiles to learn more about each project.</p>
+        <div class="container d-flex justify-content-center align-items-center"
+            style="padding-left: 0%;padding-right: 0%;width: 100%;">
             <div class="row gx-3" style="width: 100%;">
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+
+<!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (START)-->
+                <!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
+
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
+
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+<!-- Project Tile template -->
+<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+    <a href="projects/sampleproject.html">
+        <div class="work-item" style="height: 350px;
+                                        border: 1.8px solid;
+                                        border-color: #545454;
+                                        border-radius: 5px;
+                                        position: relative;
+                                        transition: all .3s ease-in-out;
+                                        overflow: hidden;">
+                <!-- Change the image url with project image -->
+                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                            position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: black;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        transition: all .3s ease-in-out;">
                 </div>
+            <!-- Project Title Start -->
+            <div class="work-item-title-container">
+                <div class="work-item-title">
+                    <span>Sample Name</span>
+                </div>
+            </div>
+            <!-- Project Title End -->
+        </div>
+    </a>
+    <!-- Tags start -->
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+    <!-- Tags End -->
+
+    <!-- About Project -->
+    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+    </p>
+    <!-- About Project End -->s
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+
+    <!-- Contributions/Highlights Start -->
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+    <!-- Contributions/Highlights end -->
+</div>
+<!-- Project Tile template End-->
+
+<!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (END)-->
             </div>
         </div>
     </div>
-    <div id="freelanceprojects" style="background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
-        <h1 style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">Freelance Projects</h1>
-        <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">Click on the tiles to learn more about each project.</p>
-        <div class="container d-flex justify-content-center align-items-center" style="padding-left: 0%;padding-right: 0%;width: 100%;">
+    <!--Personal Projects End -->
+    <!-- Freelance Projects Start -->
+    <div id="freelanceprojects"
+        style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
+        <h1
+            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">
+            Freelance Projects</h1>
+        <p
+            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">
+            Click on the tiles to learn more about each project.</p>
+        <div class="container d-flex justify-content-center align-items-center"
+            style="padding-left: 0%;padding-right: 0%;width: 100%;">
             <div class="row gx-3" style="width: 100%;">
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="projects/sampleproject.html"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
+<!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (START)-->
+                <!-- Project Tile template -->
+                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+                    <a href="projects/sampleproject.html">
+                        <div class="work-item" style="height: 350px;
+                                                        border: 1.8px solid;
+                                                        border-color: #545454;
+                                                        border-radius: 5px;
+                                                        position: relative;
+                                                        transition: all .3s ease-in-out;
+                                                        overflow: hidden;">
+                                <!-- Change the image url with project image -->
+                                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                                            position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        background-color: black;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        transition: all .3s ease-in-out;">
+                                </div>
+                            <!-- Project Title Start -->
+                            <div class="work-item-title-container">
+                                <div class="work-item-title">
+                                    <span>Sample Name</span>
+                                </div>
+                            </div>
+                            <!-- Project Title End -->
+                        </div>
+                    </a>
+                    <!-- Tags start -->
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+                    <!-- Tags End -->
+                
+                    <!-- About Project -->
+                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+                        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+                    </p>
+                    <!-- About Project End -->s
+                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+                
+                    <!-- Contributions/Highlights Start -->
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+                    <!-- Contributions/Highlights end -->
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#">
-    <div class="work-item">
-		<div class="work-item-bg" style="background-image:        url('http://hugo.fyi/assets/projectThumbs/fop-thumb3.png')">
-        </div>
-	</div>
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
+                <!-- Project Tile template End-->
+                <!-- Project Tile template -->
+                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+                    <a href="projects/sampleproject.html">
+                        <div class="work-item" style="height: 350px;
+                                                        border: 1.8px solid;
+                                                        border-color: #545454;
+                                                        border-radius: 5px;
+                                                        position: relative;
+                                                        transition: all .3s ease-in-out;
+                                                        overflow: hidden;">
+                                <!-- Change the image url with project image -->
+                                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                                            position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        background-color: black;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        transition: all .3s ease-in-out;">
+                                </div>
+                            <!-- Project Title Start -->
+                            <div class="work-item-title-container">
+                                <div class="work-item-title">
+                                    <span>Sample Name</span>
+                                </div>
+                            </div>
+                            <!-- Project Title End -->
+                        </div>
+                    </a>
+                    <!-- Tags start -->
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+                    <!-- Tags End -->
+                
+                    <!-- About Project -->
+                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+                        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+                    </p>
+                    <!-- About Project End -->s
+                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+                
+                    <!-- Contributions/Highlights Start -->
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+                    <!-- Contributions/Highlights end -->
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
+                <!-- Project Tile template End-->
+                <!-- Project Tile template -->
+                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+                    <a href="projects/sampleproject.html">
+                        <div class="work-item" style="height: 350px;
+                                                        border: 1.8px solid;
+                                                        border-color: #545454;
+                                                        border-radius: 5px;
+                                                        position: relative;
+                                                        transition: all .3s ease-in-out;
+                                                        overflow: hidden;">
+                                <!-- Change the image url with project image -->
+                                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
+                                                            position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        background-color: black;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat;
+                                                        background-position: center;
+                                                        transition: all .3s ease-in-out;">
+                                </div>
+                            <!-- Project Title Start -->
+                            <div class="work-item-title-container">
+                                <div class="work-item-title">
+                                    <span>Sample Name</span>
+                                </div>
+                            </div>
+                            <!-- Project Title End -->
+                        </div>
+                    </a>
+                    <!-- Tags start -->
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
+                    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
+                    <!-- Tags End -->
+                
+                    <!-- About Project -->
+                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
+                        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
+                    </p>
+                    <!-- About Project End -->s
+                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+                
+                    <!-- Contributions/Highlights Start -->
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
                     <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
+                    <!-- Contributions/Highlights end -->
                 </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                </div>
-                <div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;"><a href="#"><img src="assets/img/fortnite.jpg" style="width: 100%;height: auto;border-radius: 6px;border: 1px solid rgb(183,183,183);margin-bottom: 0%;padding-bottom: 0px;" />
-</a><button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C++</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button><button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-                    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">Highlights:</p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-                </div>
+                <!-- Project Tile template End-->
+                
+<!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (END)-->
             </div>
         </div>
     </div>
-    <div class="text-center" id="contact" style="background: #062F4F;color: rgb(255,255,255);padding-top: 2%;padding-bottom: 2%;">
-        <h1 class="text-capitalize fw-normal" style="font-family: Abel, sans-serif;text-align: center;font-size: 60px;">Contact me</h1><p id="contactpara" class="text-center" style="margin-left: 15%;margin-right: 15%;font-family: Quicksand, sans-serif;margin-bottom: 15px;text-align: justify;">Feel free to send me a message here:<a href="mailto:mazharrajani@gmail.com" style="color:#fff;">mazharrajani@gmail.com</a>, I&#39;ll try to respond as quick as I can! I&#39;m also on this social media thing, if you need me there: <br /></p><a class="btn btn-primary" role="button" data-bss-hover-animate="tada" style="background: rgba(13,110,253,0);border-style: none;padding: 0%;" href="https://www.linkedin.com/in/mazharrajani/"><i class="fab fa-linkedin-in" style="padding: 10px;font-size: 25px;"></i></a><a class="btn btn-primary" role="button" data-bss-hover-animate="tada" style="background: rgba(13,110,253,0);border-style: none;width: 34.9px;height: 28px;padding: 0px;padding-bottom: 2px;" href="https://www.fiverr.com/mazharrajani"><img src="assets/img/fiverico.png" height="100%" width="100%"></a>
+    <!-- Freelance Projects End -->
+    <!-- Contact Start -->
+    <div class="text-center" id="contact"
+        style="display:none;background: #062F4F;color: rgb(255,255,255);padding-top: 2%;padding-bottom: 2%;">
+        <h1 class="text-capitalize fw-normal" style="font-family: Abel, sans-serif;text-align: center;font-size: 60px;">
+            Contact me</h1>
+        <p id="contactpara" class="text-center"
+            style="margin-left: 15%;margin-right: 15%;font-family: Quicksand, sans-serif;margin-bottom: 15px;text-align: justify;">
+            Feel free to send me a message here:<a href="mailto:mazharrajani@gmail.com"
+                style="color:#fff;">mazharrajani@gmail.com</a>, I&#39;ll try to respond as quick as I can! I&#39;m also
+            on this social media thing, if you need me there: <br /></p><a class="btn btn-primary" role="button"
+            data-bss-hover-animate="tada" style="background: rgba(13,110,253,0);border-style: none;padding: 0%;"
+            href="https://www.linkedin.com/in/mazharrajani/"><i class="fab fa-linkedin-in"
+                style="padding: 10px;font-size: 25px;"></i></a><a class="btn btn-primary" role="button"
+            data-bss-hover-animate="tada"
+            style="background: rgba(13,110,253,0);border-style: none;width: 34.9px;height: 28px;padding: 0px;padding-bottom: 2px;"
+            href="https://www.fiverr.com/mazharrajani"><img src="assets/img/fiverico.png" height="100%"
+                width="100%"></a>
     </div>
-    <div style="background: #222222;text-align: center;font-family: Quicksand, sans-serif;padding-top: 10px;padding-bottom: 10px;">
-        <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 0px;">Copyright © 2022 by Mazhar Rajani | All images, logos and names are used with permission.<br></p>
+    <!-- Contact End -->
+    <!-- Copyright Start -->
+    <div id="copyright"style=" display:none; background: #222222;text-align: center;font-family: Quicksand, sans-serif;padding-top: 10px;padding-bottom: 10px;">
+        <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 0px;">Copyright © 2022 by
+            Mazhar Rajani | All images, logos and names are used with permission.<br></p>
     </div>
+    <!-- Copyright End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script>
-        $(window).on("load",function(){
+        $(window).on("load", function () {
             $(".containloader").fadeOut("slow");
-            $(".navbar").show();
+            $("#about").show();
+            $("#professionalprojects").show();
+            $("#personalprojects").show();
+            $("#freelanceprojects").show();
+            $("#contact").show();
+            $("#copyright").show();
 
-    
+
+
         });
         setTimeout(heightchange, 5000);
-        function heightchange(){
-            document.getElementById("video").style.minHeight="60vh";
-            document.getElementById("video").style.transition="min-height 1s ease-in-out";
-            document.getElementById("video").style.height="60vh";
+        function heightchange() {
+            document.getElementById("video").style.minHeight = "60vh";
+            document.getElementById("video").style.transition = "min-height 1s ease-in-out";
+            document.getElementById("video").style.height = "60vh";
         }
     </script>
+
 </body>
 
 </html>
