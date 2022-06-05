@@ -74,9 +74,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .navbar{
+    height: auto !important;
+  }
+  .navbar-toggler{
+    background-color:white;
+  }
+}
+
+
 html, body {
   overflow-x: hidden;
-  /*width: 100vw !important;*/
 }
 
 .btn:active {
