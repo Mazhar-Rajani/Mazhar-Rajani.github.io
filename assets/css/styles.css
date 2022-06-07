@@ -202,3 +202,8 @@
             transform: translate(0);
   }
 }
+
+
+.navbar>.container-fluid{
+  background-color:#000000;
+}
