@@ -127,8 +127,8 @@ html, body {
   bottom: 0;
   text-align: center;
   line-height: 35px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   pointer-events: none;
   padding-bottom: 12px;
   padding-top: 12px;
