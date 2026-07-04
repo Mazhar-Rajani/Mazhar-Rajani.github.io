@@ -31,16 +31,17 @@ body {
 .hero-block {
   background: var(--rj-navy);
   color: var(--rj-text);
-  padding-top: 4.5rem;
+  padding-top: 6.5rem;
   padding-bottom: 3rem;
 }
 
 #contact.hero-block {
-  padding-top: 3rem;
+  padding-top: 6.5rem;
   padding-bottom: 3rem;
 }
 
 .hero-heading {
+  text-align: center;
   letter-spacing: 0.04em;
 }
 
