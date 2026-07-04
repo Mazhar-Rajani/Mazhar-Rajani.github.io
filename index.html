@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="font-family: Quicksand, sans-serif;font-size: 15px;background: #222222;height: 100%;">
+<html lang="en" class="site-root">
 
 <head>
     <meta charset="utf-8">
@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-Dark.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/redesign.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
-<body class="noscroll"style="padding-bottom: -7%;width: 100%;">
+<body class="noscroll">
     <!-- Navbar Start -->
     <nav class="navbar navbar-light navbar-expand-xl fixed-top py-3"
-        style="height: 50px;background: rgba(0,0,0);color: rgb(255,255,255); display: none;">
+        class="navbar-custom" style="display: none;">
         <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"
                 style="margin-right: 15px;"><span class="fw-bolder"
                     style="font-family: Abel, sans-serif;font-size: 35px;color: rgba(255,255,255,0.9);text-align: center;width: auto;height: auto;"><strong>Mazhar
@@ -31,26 +32,26 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav text-uppercase me-auto"
                     style="font-family: Quicksand, sans-serif;color: rgb(255,255,255);">
-                    <li class="nav-item"><a class="nav-link active" href="#about" style="color: rgb(255,255,255);"><i
+                    <li class="nav-item"><a class="nav-link active" href="#about"><i
                                 class="far fa-lightbulb" style="margin-right: 6px;"></i>ABOUT<br></a></li>
                     <li class="nav-item"><a class="nav-link active" href="#professionalprojects"
-                            style="color: rgb(255,255,255);"><i class="fas fa-users"
+                           ><i class="fas fa-users"
                                 style="margin-right: 6px;"></i>PROFESSIONAL PROJECTS<br></a></li>
                     <li class="nav-item"><a class="nav-link active" href="#personalprojects"
-                            style="color: rgb(255,255,255);"><i class="fas fa-heart"
+                           ><i class="fas fa-heart"
                                 style="margin-right: 6px;"></i>PERSONAL PROJECTS<br></a></li>
                     <li class="nav-item"><a class="nav-link active" href="#freelanceprojects"
-                            style="color: rgb(255,255,255);"><i class="fas fa-project-diagram"
+                           ><i class="fas fa-project-diagram"
                                 style="margin-right: 6px;"></i>FREELANCE PROJECTS<br></a></li>
                     <li class="nav-item"><a class="nav-link" href="assets/Mazhar_Rajani_Resume.pdf"
-                            style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                           ><svg xmlns="http://www.w3.org/2000/svg" width="1em"
                                 height="1em" viewBox="0 0 24 24" fill="none" style="margin-right: 6px;">
                                 <path
                                     d="M9 12H15M9 16H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"></path>
                             </svg>RESUME<br></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: rgb(255,255,255);"><i
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i
                                 class="far fa-comments" style="margin-right: 6px;"></i>CONTACT<br></a></li>
                 </ul>
             </div>
@@ -71,8 +72,8 @@
     </div>
     <!-- Loading Animation End -->
     <!-- About Block start -->
-    <div id="about" style="display:none;background: #062F4F;color: rgb(255,255,255);padding-top: 4%;padding-bottom: 2%;">
-        <h1 class="text-capitalize fw-normal" style="font-family: Abel, sans-serif;text-align: center;font-size: 60px;">
+    <div id="about" class="hero-block" style="display:none;">
+        <h1 class="text-capitalize fw-normal hero-heading">
             About Me</h1>
         <p id="aboutpara"
             style="margin-left: 15%;margin-right: 15%;font-family: Quicksand, sans-serif;margin-bottom: 15px;padding-right: 0px;font-size: 16px;text-align: justify;">
@@ -88,12 +89,12 @@
     <!-- About Block End -->
     <!-- Professinal Projects Start -->
     <div id="professionalprojects"
-        style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
+        class="section-block" style="display:none;">
         <h1
-            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">
+            class="section-heading">
             Professional Projects</h1>
         <p
-            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">
+            class="section-subheading">
             Click on the tiles to learn more about each project.</p>
         <div class="container d-flex justify-content-center align-items-center"
             style="padding-left: 0%;padding-right: 0%;width: 100%;">
@@ -101,27 +102,11 @@
 <!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (START)-->
  
 <!-- Project Tile template (Snakes & Ladders 3D)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/snl.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/snl.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -133,48 +118,32 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         Multiplayer Snakes & Ladders game based on Unity & Photon. The game has over 10M+ downloads and is one of the top play store games. I worked on this project at Godspeed Games for a client.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay Implementation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine based AI<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Turn based multiplayer using Photon<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Level design tools & editor scripting<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay Implementation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Finite state machine based AI<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Turn based multiplayer using Photon<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Level design tools & editor scripting<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Plan B From Outer Space)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://store.steampowered.com/app/1683620/Plan_B_from_Outer_Space_A_Bavarian_Odyssey/">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/planb.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/planb.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -186,48 +155,32 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         Plan B From Outer Space is an interactive text adventure game. I worked on this project at Godspeed Games for a client. <br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Full Controller implementation using Rewired<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Partial localization scripting<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Nintendo Switch port<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Various bug fixes and support<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Full Controller implementation using Rewired<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Partial localization scripting<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Nintendo Switch port<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Various bug fixes and support<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Godspeed Cricket League)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://play.google.com/store/apps/details?id=com.godspeedgames.cricket">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/gcl_1.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/gcl_1.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -239,49 +192,33 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         3D cricket simulation game. I worked on this game at Godspeed Games. It has over 1M+ downloads. It competes with some of the top cricket games on the play store.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine based AI<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implementation of motion capture animations using Mecanim<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Main Menu & Shop UI implementation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Cinematic camera system and editor tools<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>A custom shader for player jersey numbers<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Finite state machine based AI<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implementation of motion capture animations using Mecanim<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Main Menu & Shop UI implementation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Cinematic camera system and editor tools<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>A custom shader for player jersey numbers<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Expert Path VR)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1Mq_BoGLMRlixQ3awODf4XaJOcmB5tQr3/view?usp=sharing">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/expertpath.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/expertpath.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -293,49 +230,33 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         VR simulation project. I worked on this project at Aptara. It allows technicians to have realstic conversations with customers in VR.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Twine based dialogue system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom animations and voiceover for NPCs<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Modular scene based conversations<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>VR interactivities using controllers<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Deployed on Meta Quest<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Twine based dialogue system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom animations and voiceover for NPCs<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Modular scene based conversations<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>VR interactivities using controllers<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Deployed on Meta Quest<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Fire Extinguisher WebGL)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1qdU-Oghs3f4ciA-vIgeRVyoWR7QlhP15/view?usp=sharing">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/fire.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/fire.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -347,49 +268,33 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         WebGL simulation project. I worked on this project at Aptara. The goal of this project is to provide an immersive fire extinguisher training.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>WebGL and WebVR based simulation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>State machine based modular saftey procedure<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Reactive animations for npcs during fire emergency<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Simplified FPS controller for learners<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom training module for new learners<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>WebGL and WebVR based simulation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>State machine based modular saftey procedure<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Reactive animations for npcs during fire emergency<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Simplified FPS controller for learners<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom training module for new learners<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Fiber Network AR)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1scSpaKQw1y_bJedtHDsHmkkl8OHkrGXG/view?usp=sharing">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/fiber.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/fiber.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -401,49 +306,33 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         AR simulation project. I worked on this project at Aptara. It allows new technicians to explore the different components of the Fiber Network.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>AR Foundation based system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Deployed on Android and iOS platforms<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Module system for exploring different components<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Interactivities in AR for immersion<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Voiceover and instructions for guiding learners<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>AR Foundation based system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Deployed on Android and iOS platforms<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Module system for exploring different components<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Interactivities in AR for immersion<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Voiceover and instructions for guiding learners<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Match Harmony)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://games.skillz.com/games/puzzle/match-harmony-5582">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/mharmony.webp');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/mharmony.webp');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -455,48 +344,32 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A Match 3 puzzle game that I worked on at Godspeed Games for a client.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>iOS port<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Skillz sdk implementation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Scripted various game modes using the existing core system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Technical support for iOS related issues during release and post release<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>iOS port<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Skillz sdk implementation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Scripted various game modes using the existing core system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Technical support for iOS related issues during release and post release<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Coloring Games for Kids)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://play.google.com/store/apps/details?id=com.iz.coloring.games.kids.drawing.book.color.by.number">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/coloring.webp');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/coloring.webp');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -508,46 +381,30 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A coloring game for kids that I worked on at Godspeed Games for a client. It has over 1M+ downloads.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented the core coloring system that is used in this and many other such games<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom shaders and tooling for sprite coloring<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented the core coloring system that is used in this and many other such games<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom shaders and tooling for sprite coloring<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Kids Drawing Games)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://play.google.com/store/apps/details?id=com.iz.kitty.coloring.book.kids.drawing.cat.games.girls.color.by.number.learn.draw.paint.animal">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/drawing.webp');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/drawing.webp');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -559,47 +416,31 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A drawing game for kids that I worked on at Godspeed Games. This is step by step game that teaches kids how to draw and bring the characters to life.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented the base drawing & coloring system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented a modular hand tutorial system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>State machine based modular gameplay loop<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Created a xNode based level editor for the artists to easily create levels<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented the base drawing & coloring system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented a modular hand tutorial system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>State machine based modular gameplay loop<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Created a xNode based level editor for the artists to easily create levels<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Farm sim game)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+<div class="col-md-4 projectcol">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/farm.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/farm.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -611,50 +452,34 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         An unannounced casual farming sim game in development at Godspeed Games for a client. This game is production for PC & Consoles.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Full AI implementation using Behavior Trees<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Developed a custom modular Behavior Trees plugin using xNode<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Dynamic snow shader for levels with designer friendly tooling<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Addressable based asset and scene loading for easier content maintenance and performance<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Crossplatform input system using Rewired<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Level editor tools (wip)<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Full AI implementation using Behavior Trees<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Developed a custom modular Behavior Trees plugin using xNode<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Dynamic snow shader for levels with designer friendly tooling<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Addressable based asset and scene loading for easier content maintenance and performance<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Crossplatform input system using Rewired<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Level editor tools (wip)<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Super Climber)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1ccpFWJeWORiA6UCXag6xaII6I-MA7qGH/view?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/sclimber.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/sclimber.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -666,47 +491,31 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A casual & fun rock climbing prototype developed at Godspeed Games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay mechanics<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Animation implementation using Spine<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Level editor to easily create challenging and fun levels<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay mechanics<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Animation implementation using Spine<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Level editor to easily create challenging and fun levels<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Isometric Decoration Game)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/drive/folders/1xZvCwre50oi1r0udixvJ5fFHCrvac_6l?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/deco.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/deco.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -718,46 +527,30 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         An Isometric interior decoration prototype developed at Godspeed Games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Modular isometric grid system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay mechanics<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Modular isometric grid system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay mechanics<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (2D Boat Game)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/drive/folders/1ZKp8jBT2Gr5-GAGnhZL04_-47zxqdiDp?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/boat.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/boat.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -769,47 +562,31 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A fun physics based boat game prototype developed at Godspeed Games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>2D water system with procedural wave & ripple generation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom water shader<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Boat mechanics<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>2D water system with procedural wave & ripple generation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom water shader<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Boat mechanics<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Watercolor painting)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/drive/folders/1RoLiUubbCR6f9G3bZdixCYU3MaOAC9_M?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/watercolor.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/watercolor.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -821,48 +598,32 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         Watercolor painting system for mobile devices. A base system to be used in different games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented various algorithms to create a water simulation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Color blending based on the Kubleka-Munk system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Customized brushes and masking systen<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Applied the base system to various game prototypes<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented various algorithms to create a water simulation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Color blending based on the Kubleka-Munk system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Customized brushes and masking systen<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Applied the base system to various game prototypes<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Polishing Game)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1X82yRaN5oHrFXu4ZjG4VqT8wk4STkw7w/view?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/polish.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/polish.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -874,46 +635,30 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A casual cleaning stuff game prototype. It has mechanics similar to power wash sim type of games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented a modular cleaning system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Uses command buffers and custom shaders for cleaning<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay loop & progression<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented a modular cleaning system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Uses command buffers and custom shaders for cleaning<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay loop & progression<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Unwrapping Game)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+<div class="col-md-4 projectcol">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/Unwrap.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/Unwrap.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -925,48 +670,32 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A casual peeling game prototype similar to I peel good developed at Godspeed Games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented a basic mesh cutting system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Procedural peel generation with uv mapping<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Uses delaunay triangulation for generated meshes<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay loop and progression<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented a basic mesh cutting system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Procedural peel generation with uv mapping<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Uses delaunay triangulation for generated meshes<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay loop and progression<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Water Shaders)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/drive/folders/10VWQj3mbKrcrOrMemHMr_fw3qDlilC2y?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/water.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/water.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -978,45 +707,29 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         Custom water shaders developed at Godspeed Games for use in various games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Created custom shaders for water effects<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Created custom shaders for water effects<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Debug Tool) -->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1FywCTrSqEVWQd4TdiFviIB8CPfP20DFM/view?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/devtool.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/devtool.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1028,46 +741,30 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A useful debug and info tool developed at Godspeed Games used in many games. The tool is based on unity imgui and uses c# reflection.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Uses reflection attributes to create a settings menu<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom console that displays unity logs<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>The tool can be easily extended and customized and new groups can be added<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Uses reflection attributes to create a settings menu<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom console that displays unity logs<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>The tool can be easily extended and customized and new groups can be added<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Behavior Tree Plugin)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+<div class="col-md-4 projectcol">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/bt.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/bt.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1079,48 +776,32 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A custom xNode(modified) based Behavior Tree plugin.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Modular Behavior Tree system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom graph editor based on xNode<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>xNode extension to support vertical nodes<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Another graph editor can be used as well<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Modular Behavior Tree system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom graph editor based on xNode<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>xNode extension to support vertical nodes<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Another graph editor can be used as well<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Coloring Plugin)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/drive/folders/1yb-Ngng8A6jai-AhHGqsLoHlX13DOcYH?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/col.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/col.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1132,46 +813,30 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A 2d sprite coloring plugin developed at Godspeed Games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom shaders for brushes<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Multiple brush type support<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom shaders for brushes<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Multiple brush type support<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (AR Measurement)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1MudkS_hPc4ggP6D4k8zd35vFxiQnk3VA/view?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/ARMeasure.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/ARMeasure.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1183,45 +848,29 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         ARCore based app to measure surfaces and apply various tile effects.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Procedural mesh genration for tile effects<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Procedural mesh genration for tile effects<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Navy Ship Training)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1Udq8XPvte34j7uvpOfdeYWXh8hXE-z3F/view?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/navy.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/navy.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1233,47 +882,31 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A VR safety training app for the Oculus Rift and Vive systems. This app was created for the Navy.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>State machine based training modules<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Mecanim based animations<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Technical support post client delivery<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>State machine based training modules<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Mecanim based animations<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Technical support post client delivery<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Forklift Sim)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/drive/folders/13ml0d30_kesYUcw3H5sKcVSt-jrSo6to?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/forklift.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/forklift.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1285,47 +918,31 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A VR forklift handling and safety training simulation for the Oculus Rift & Logitech G29 wheel. This application was created for demonstration and marketing purposes.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented forklift driving and handling<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented the G29 wheel & controllers<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Helped with the warehouse level design and lighting<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented forklift driving and handling<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented the G29 wheel & controllers<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Helped with the warehouse level design and lighting<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Excavator Sim)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://drive.google.com/file/d/1gCw7vvEIx3O0Zb3VI8CCe4ksD-gC0BYk/view?usp=share_link">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/excavator.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/excavator.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1337,20 +954,20 @@
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A VR excavator handling and safety training simulation for the Oculus Rift. This application was created for demonstration and marketing purposes.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Implemented excavator handling and physics<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Helped with physics optimization<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Implemented excavator handling and physics<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Helped with physics optimization<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
@@ -1362,12 +979,12 @@
     <!-- Professinal Projects End -->
     <!-- Freelance Projects Start -->
     <div id="freelanceprojects"
-style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
+class="section-block" style="display:none;">
 <h1
-    style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">
+    class="section-heading">
     Freelance Projects</h1>
 <p
-    style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">
+    class="section-subheading">
     Click on the tiles to learn more about each project.</p>
 <div class="container d-flex justify-content-center align-items-center"
     style="padding-left: 0%;padding-right: 0%;width: 100%;">
@@ -1375,27 +992,11 @@ style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;paddi
 
 <!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (START)-->
 <!-- Project Tile template (Solar System AR)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
 <a href="https://drive.google.com/file/d/16keiC0ErlrcjktXq2PefLbtDpOCL2wh2/view?usp=sharing">
-<div class="work-item" style="height: 350px;
-                                border: 1.8px solid;
-                                border-color: #545454;
-                                border-radius: 5px;
-                                position: relative;
-                                transition: all .3s ease-in-out;
-                                overflow: hidden;">
+<div class="work-item">
         <!-- Change the image url with project image -->
-        <div class="work-item-bg" style="background-image: url('assets/img/solar.png');
-                                    position: absolute;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                background-color: black;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                transition: all .3s ease-in-out;">
+        <div class="work-item-bg" style="background-image: url('assets/img/solar.png');">
         </div>
     <!-- Project Title Start -->
     <div class="work-item-title-container">
@@ -1407,47 +1008,31 @@ style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;paddi
 </div>
 </a>
 <!-- Tags start -->
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+<button class="btn btn-primary tag tag-red" type="button">C#</button>
+<button class="btn btn-primary tag tag-purple" type="button">Unity</button>
 <!-- Tags End -->
 
 <!-- About Project -->
-<p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+<p class="project-desc">
 Vuforia based AR app to visualize and study about the solar system. This app was used by Dorado Learning for tech demonstration and marketing purposes.<br>
 </p>
 <!-- About Project End -->s
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+<p class="contrib-heading">My contributions :</p>
 
 <!-- Contributions/Highlights Start -->
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Full AR experience design<br></p>
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Vuforia implementation<br></p>
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Voice over integration<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Full AR experience design<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Vuforia implementation<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Voice over integration<br></p>
 <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Human Brain VR)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
 <a href="">
-<div class="work-item" style="height: 350px;
-                                border: 1.8px solid;
-                                border-color: #545454;
-                                border-radius: 5px;
-                                position: relative;
-                                transition: all .3s ease-in-out;
-                                overflow: hidden;">
+<div class="work-item">
         <!-- Change the image url with project image -->
-        <div class="work-item-bg" style="background-image: url('assets/img/brain2.png');
-                                    position: absolute;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                background-color: black;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                transition: all .3s ease-in-out;">
+        <div class="work-item-bg" style="background-image: url('assets/img/brain2.png');">
         </div>
     <!-- Project Title Start -->
     <div class="work-item-title-container">
@@ -1459,48 +1044,32 @@ Vuforia based AR app to visualize and study about the solar system. This app was
 </div>
 </a>
 <!-- Tags start -->
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+<button class="btn btn-primary tag tag-red" type="button">C#</button>
+<button class="btn btn-primary tag tag-purple" type="button">Unity</button>
 <!-- Tags End -->
 
 <!-- About Project -->
-<p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+<p class="project-desc">
 An interactive VR demo to learn about the human brain. This app was used by Dorado Learning for tech demonstration and marketing purposes.<br>
 </p>
 <!-- About Project End -->s
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+<p class="contrib-heading">My contributions :</p>
 
 <!-- Contributions/Highlights Start -->
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Full VR experience design<br></p>
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>State machine based learning modules<br></p>
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Helped the client in the storyboarding stage<br></p>
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Tech support post delivery<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Full VR experience design<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>State machine based learning modules<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Helped the client in the storyboarding stage<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Tech support post delivery<br></p>
 <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Visionarium)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
 <a href="https://store.steampowered.com/app/928300/Visionarium/">
-<div class="work-item" style="height: 350px;
-                                border: 1.8px solid;
-                                border-color: #545454;
-                                border-radius: 5px;
-                                position: relative;
-                                transition: all .3s ease-in-out;
-                                overflow: hidden;">
+<div class="work-item">
         <!-- Change the image url with project image -->
-        <div class="work-item-bg" style="background-image: url('assets/img/v.jpg');
-                                    position: absolute;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                background-color: black;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                transition: all .3s ease-in-out;">
+        <div class="work-item-bg" style="background-image: url('assets/img/v.jpg');">
         </div>
     <!-- Project Title Start -->
     <div class="work-item-title-container">
@@ -1512,46 +1081,30 @@ An interactive VR demo to learn about the human brain. This app was used by Dora
 </div>
 </a>
 <!-- Tags start -->
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+<button class="btn btn-primary tag tag-red" type="button">C#</button>
+<button class="btn btn-primary tag tag-purple" type="button">Unity</button>
 <!-- Tags End -->
 
 <!-- About Project -->
-<p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+<p class="project-desc">
 Visionarium is a music driven vr journey for steam vr.<br>
 </p>
 <!-- About Project End -->s
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+<p class="contrib-heading">My contributions :</p>
 
 <!-- Contributions/Highlights Start -->
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Loopback reactive audio visualization system implementation using wasapi<br></p>
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>VR menu system design using curved ui from the assetstore<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Loopback reactive audio visualization system implementation using wasapi<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>VR menu system design using curved ui from the assetstore<br></p>
 <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Visionarium 2)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
 <a href="https://store.steampowered.com/app/1917860/Visionarium_2__The_Descent/">
-<div class="work-item" style="height: 350px;
-                                border: 1.8px solid;
-                                border-color: #545454;
-                                border-radius: 5px;
-                                position: relative;
-                                transition: all .3s ease-in-out;
-                                overflow: hidden;">
+<div class="work-item">
         <!-- Change the image url with project image -->
-        <div class="work-item-bg" style="background-image: url('assets/img/v2.jpg');
-                                    position: absolute;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                background-color: black;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                transition: all .3s ease-in-out;">
+        <div class="work-item-bg" style="background-image: url('assets/img/v2.jpg');">
         </div>
     <!-- Project Title Start -->
     <div class="work-item-title-container">
@@ -1563,45 +1116,29 @@ Visionarium is a music driven vr journey for steam vr.<br>
 </div>
 </a>
 <!-- Tags start -->
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-<button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+<button class="btn btn-primary tag tag-red" type="button">C#</button>
+<button class="btn btn-primary tag tag-purple" type="button">Unity</button>
 <!-- Tags End -->
 
 <!-- About Project -->
-<p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+<p class="project-desc">
 Visionarium 2 is a music driven vr journey for steam vr.<br><br>
 </p>
 <!-- About Project End -->s
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+<p class="contrib-heading">My contributions :</p>
 
 <!-- Contributions/Highlights Start -->
-<p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Loopback reactive audio visualization system implementation using wasapi<br></p>
+<p class="contrib-item"><i class="fas fa-check"></i>Loopback reactive audio visualization system implementation using wasapi<br></p>
 <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Music Sequencer)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
             <a href="https://drive.google.com/file/d/1W7DD7Uq4CstEnQf6F7j5XBJ6Zh69aDIo/view?usp=share_link">
-                <div class="work-item" style="height: 350px;
-                                                border: 1.8px solid;
-                                                border-color: #545454;
-                                                border-radius: 5px;
-                                                position: relative;
-                                                transition: all .3s ease-in-out;
-                                                overflow: hidden;">
+                <div class="work-item">
                         <!-- Change the image url with project image -->
-                        <div class="work-item-bg" style="background-image: url('assets/img/verse.png');
-                                                    position: absolute;
-                                                top: 0;
-                                                left: 0;
-                                                right: 0;
-                                                bottom: 0;
-                                                background-color: black;
-                                                background-size: cover;
-                                                background-repeat: no-repeat;
-                                                background-position: center;
-                                                transition: all .3s ease-in-out;">
+                        <div class="work-item-bg" style="background-image: url('assets/img/verse.png');">
                         </div>
                     <!-- Project Title Start -->
                     <div class="work-item-title-container">
@@ -1613,48 +1150,32 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
                 </div>
             </a>
             <!-- Tags start -->
-            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+            <button class="btn btn-primary tag tag-red" type="button">C#</button>
+            <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
             <!-- Tags End -->
         
             <!-- About Project -->
-            <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+            <p class="project-desc">
                 A music sequencer app created in unity with cloud file streaming using Firebase.<br>
             </p>
             <!-- About Project End -->s
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+            <p class="contrib-heading">My contributions :</p>
         
             <!-- Contributions/Highlights Start -->
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Sequencer design and implementation<br></p>
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Firebase storage and db implementation<br></p>
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Audio file recording and .wav conversion<br></p>
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Save/Load system<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Sequencer design and implementation<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Firebase storage and db implementation<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Audio file recording and .wav conversion<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Save/Load system<br></p>
             <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Aurelius)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
             <a href="https://www.leadupp.co/#Aurelius">
-                <div class="work-item" style="height: 350px;
-                                                border: 1.8px solid;
-                                                border-color: #545454;
-                                                border-radius: 5px;
-                                                position: relative;
-                                                transition: all .3s ease-in-out;
-                                                overflow: hidden;">
+                <div class="work-item">
                         <!-- Change the image url with project image -->
-                        <div class="work-item-bg" style="background-image: url('assets/img/Aurelius.png');
-                                                    position: absolute;
-                                                top: 0;
-                                                left: 0;
-                                                right: 0;
-                                                bottom: 0;
-                                                background-color: black;
-                                                background-size: cover;
-                                                background-repeat: no-repeat;
-                                                background-position: center;
-                                                transition: all .3s ease-in-out;">
+                        <div class="work-item-bg" style="background-image: url('assets/img/Aurelius.png');">
                         </div>
                     <!-- Project Title Start -->
                     <div class="work-item-title-container">
@@ -1666,47 +1187,31 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
                 </div>
             </a>
             <!-- Tags start -->
-            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+            <button class="btn btn-primary tag tag-red" type="button">C#</button>
+            <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
             <!-- Tags End -->
         
             <!-- About Project -->
-            <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+            <p class="project-desc">
                 Aurelius is an educational game with rpg like elements that focuses on improving communication and soft skills.<br>
             </p>
             <!-- About Project End -->s
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+            <p class="contrib-heading">My contributions :</p>
         
             <!-- Contributions/Highlights Start -->
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Webgl template modification<br></p>
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Content optimization<br></p>
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Tech consultation and support<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Webgl template modification<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Content optimization<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Tech consultation and support<br></p>
             <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Substation Visualization)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
                             <a href="https://drive.google.com/file/d/1g9sZj0ou3Dw8jpVCMma7KF5GLLkpD1Vd/view?usp=share_link">
-                                <div class="work-item" style="height: 350px;
-                                                                border: 1.8px solid;
-                                                                border-color: #545454;
-                                                                border-radius: 5px;
-                                                                position: relative;
-                                                                transition: all .3s ease-in-out;
-                                                                overflow: hidden;">
+                                <div class="work-item">
                                         <!-- Change the image url with project image -->
-                                        <div class="work-item-bg" style="background-image: url('assets/img/Room.jpg');
-                                                                    position: absolute;
-                                                                top: 0;
-                                                                left: 0;
-                                                                right: 0;
-                                                                bottom: 0;
-                                                                background-color: black;
-                                                                background-size: cover;
-                                                                background-repeat: no-repeat;
-                                                                background-position: center;
-                                                                transition: all .3s ease-in-out;">
+                                        <div class="work-item-bg" style="background-image: url('assets/img/Room.jpg');">
                                         </div>
                                     <!-- Project Title Start -->
                                     <div class="work-item-title-container">
@@ -1718,45 +1223,29 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
                                 </div>
                             </a>
                             <!-- Tags start -->
-                            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-                            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+                            <button class="btn btn-primary tag tag-red" type="button">C#</button>
+                            <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
                             <!-- Tags End -->
                         
                             <!-- About Project -->
-                            <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+                            <p class="project-desc">
                                 A vr substation visualization project for the Oculus Rift.<br>
                             </p>
                             <!-- About Project End -->s
-                            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+                            <p class="contrib-heading">My contributions :</p>
                         
                             <!-- Contributions/Highlights Start -->
-                            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>VR flythrough and level design<br></p>
-                            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>3D asset creation using Blender<br></p>
+                            <p class="contrib-item"><i class="fas fa-check"></i>VR flythrough and level design<br></p>
+                            <p class="contrib-item"><i class="fas fa-check"></i>3D asset creation using Blender<br></p>
                             <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Flight Game Terrains)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
-                <div class="work-item" style="height: 350px;
-                                                border: 1.8px solid;
-                                                border-color: #545454;
-                                                border-radius: 5px;
-                                                position: relative;
-                                                transition: all .3s ease-in-out;
-                                                overflow: hidden;">
+<div class="col-md-4 projectcol">
+                <div class="work-item">
                         <!-- Change the image url with project image -->
-                        <div class="work-item-bg" style="background-image: url('assets/img/terrain.jpg');
-                                                    position: absolute;
-                                                top: 0;
-                                                left: 0;
-                                                right: 0;
-                                                bottom: 0;
-                                                background-color: black;
-                                                background-size: cover;
-                                                background-repeat: no-repeat;
-                                                background-position: center;
-                                                transition: all .3s ease-in-out;">
+                        <div class="work-item-bg" style="background-image: url('assets/img/terrain.jpg');">
                         </div>
                     <!-- Project Title Start -->
                     <div class="work-item-title-container">
@@ -1768,20 +1257,20 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
                 </div>
             </a>
             <!-- Tags start -->
-            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-            <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+            <button class="btn btn-primary tag tag-red" type="button">C#</button>
+            <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
             <!-- Tags End -->
         
             <!-- About Project -->
-            <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+            <p class="project-desc">
                 A terrain prototype based on real world terrain data.<br>
             </p>
             <!-- About Project End -->s
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+            <p class="contrib-heading">My contributions :</p>
         
             <!-- Contributions/Highlights Start -->
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Terrain creation using Gaia and Aquas<br></p>
-            <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Terrain data sampled from real world data sources<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Terrain creation using Gaia and Aquas<br></p>
+            <p class="contrib-item"><i class="fas fa-check"></i>Terrain data sampled from real world data sources<br></p>
             <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
@@ -1793,12 +1282,12 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
     <!-- Freelance Projects End -->
     <!-- Personal Projects Start -->
     <div id="personalprojects"
-        style="display:none;background: #222222;padding-top: 0%;padding-bottom: 1%;padding-right: 0px;width: auto;">
+        class="section-block" style="display:none;">
         <h1
-            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;margin-bottom: 0;padding-top: 1%;">
+            class="section-heading">
             Personal Projects</h1>
         <p
-            style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;text-align: center;background: #000000;padding-top: 5px;padding-bottom: 1%;">
+            class="section-subheading">
             Click on the tiles to learn more about each project.</p>
         <div class="container d-flex justify-content-center align-items-center"
             style="padding-left: 0%;padding-right: 0%;width: 100%;">
@@ -1806,27 +1295,11 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
 
 <!-- ADD PROJECT TEMPLATE BEETWEEN THESE TAGS ONLY  (START)-->
 <!-- Project Tile template (Minesweeper)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Minesweeper-Clone">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/minesweeper.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/minesweeper.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1838,46 +1311,30 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A simple Minesweeper clone created in Unity.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay implementation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Customized grid system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay implementation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Customized grid system<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Free Flow)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Free-Flow-Clone">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/flow.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/flow.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1889,47 +1346,31 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A simple Free-Flow clone created in Unity.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Gameplay implementation<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Customized grid system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>A modular level editor to easily create levels<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Gameplay implementation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Customized grid system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>A modular level editor to easily create levels<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Clock)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Clock-Triangle">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/clock.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/clock.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1941,47 +1382,31 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A procedural clock app created with Unity similar to the one found on Wallpaper Engine.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Procedural mesh for clock hands<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Uses system date time functionality<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Successfully exported to wallpaper engine<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Procedural mesh for clock hands<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Uses system date time functionality<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Successfully exported to wallpaper engine<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Verdant World)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://ldjam.com/events/ludum-dare/50/verdant-world-but-not">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/LD50.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/LD50.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -1993,47 +1418,31 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A simple resource management game created with some friends for Ludum Dare 50.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Simple hex grid system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Object placement mechanics on grid<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>All 3d artwork created in Blender<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Simple hex grid system<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Object placement mechanics on grid<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>All 3d artwork created in Blender<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Rainy Window)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/RainyWindow">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/rain.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/rain.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2045,46 +1454,30 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A simple rainy window shader created using a tutorial for learning purposes.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Custom fragment shader<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Basic level design to showcase the shader<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Custom fragment shader<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Basic level design to showcase the shader<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Keys)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Keys-Animated">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/keys.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/keys.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2096,45 +1489,29 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         Random key animations just for fun.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Uses tweeing to animate the keys<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Uses tweeing to animate the keys<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Tic Tac Toe)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Tic-Tac-Toe">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/tic.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/tic.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2146,46 +1523,30 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A simple Tic Tac Toe clone created in Unity. Uses the Shapes plugin from the assetstore for experimentation.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Used the Shapes plugin to generate a dynamic board<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Randomomized colors based on a pallete<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Used the Shapes plugin to generate a dynamic board<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Randomomized colors based on a pallete<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Drag Cricket)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Drag-Cricket">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/dragcrick.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/dragcrick.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2197,46 +1558,30 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A casual cricket game prototype inspired by stick cricket type of games.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Trajectory based gameplay mechanics<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Basic camera & UI implementation<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Trajectory based gameplay mechanics<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Basic camera & UI implementation<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Amogus)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Amogus">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/amogus.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/amogus.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2248,46 +1593,30 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         An expermental level design project to create 3d maps of AmongUs.<br>
     </p>
     <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
+    <p class="contrib-heading">My contributions :</p>
 
     <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>3d map creation from 2d sketches in Blender<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Level design & lighting study<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>3d map creation from 2d sketches in Blender<br></p>
+    <p class="contrib-item"><i class="fas fa-check"></i>Level design & lighting study<br></p>
     <!-- Contributions/Highlights end -->
 </div>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Flag)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://github.com/Mazhar-Rajani/Flag-Shader">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/flag.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/flag.jpg');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2299,12 +1628,12 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">C#</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Unity</button>
+    <button class="btn btn-primary tag tag-red" type="button">C#</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Unity</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         A simple flag shader created in unity based on another flag shader found on Shader Toy.<br>
     </p>
     <!-- About Project End -->
@@ -2312,27 +1641,11 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
 <!-- Project Tile template End-->
 
 <!-- Project Tile template (Blender)-->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
+<div class="col-md-4 projectcol">
     <a href="https://sketchfab.com/HalfCarrot">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
+        <div class="work-item">
                 <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/blender.png');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
+                <div class="work-item-bg" style="background-image: url('assets/img/blender.png');">
                 </div>
             <!-- Project Title Start -->
             <div class="work-item-title-container">
@@ -2344,12 +1657,12 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
         </div>
     </a>
     <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Blender</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">Substance 3D</button>
+    <button class="btn btn-primary tag tag-red" type="button">Blender</button>
+    <button class="btn btn-primary tag tag-purple" type="button">Substance 3D</button>
     <!-- Tags End -->
 
     <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 0%;">
+    <p class="project-desc">
         Some of the 3d models that I have created while learning Blender.<br>
     </p>
     <!-- About Project End -->
@@ -2362,9 +1675,8 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
     </div>
     <!--Personal Projects End -->
     <!-- Contact Start -->
-    <div class="text-center" id="contact"
-        style="display:none;background: #062F4F;color: rgb(255,255,255);padding-top: 2%;padding-bottom: 2%;">
-        <h1 class="text-capitalize fw-normal" style="font-family: Abel, sans-serif;text-align: center;font-size: 60px;">
+    <div class="text-center hero-block" id="contact" style="display:none;">
+        <h1 class="text-capitalize fw-normal hero-heading">
             Contact me</h1>
         <p id="contactpara" class="text-center"
             style="margin-left: 15%;margin-right: 15%;font-family: Quicksand, sans-serif;margin-bottom: 15px;text-align: justify;">
@@ -2381,8 +1693,8 @@ Visionarium 2 is a music driven vr journey for steam vr.<br><br>
     </div>
     <!-- Contact End -->
     <!-- Copyright Start -->
-    <div id="copyright"style=" display:none; background: #222222;text-align: center;font-family: Quicksand, sans-serif;padding-top: 10px;padding-bottom: 10px;">
-        <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 0px;">Copyright © 2022 by
+    <div id="copyright" class="footer-block" style="display:none;">
+        <p class="footer-text">Copyright © 2022 by
             Mazhar Rajani | All images, logos and names are used with permission.<br></p>
     </div>
     <!-- Copyright End -->
