@@ -102,6 +102,37 @@
   @media (max-width: 500px) {
     .tools-grid { grid-template-columns: 1fr; }
   }
+  .proj-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 24px;
+  }
+  @media (max-width: 500px) {
+    .proj-grid { grid-template-columns: 1fr; }
+  }
+  .proj-card .proj-thumb {
+    display: block;
+    aspect-ratio: 16 / 10;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eee;
+  }
+  .proj-card p.proj-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15.5px;
+    color: #111;
+    margin: 10px 0 3px;
+  }
+  .proj-card p.proj-desc {
+    font-size: 14.5px;
+    color: #444;
+    margin: 0;
+  }
+  .proj-card p.proj-desc a {
+    font-size: 13px;
+  }
   .tools-grid h3 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -177,6 +208,45 @@
       <a href="https://mazhar-rajani.github.io" target="_blank" rel="noopener">Full portfolio</a>
     </div>
   </header>
+
+  <hr>
+
+  <section>
+    <h2>A few things I've built</h2>
+    <p>A small sample &mdash; more on the <a href="https://mazhar-rajani.github.io" target="_blank" rel="noopener">full portfolio</a>.</p>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <a class="proj-thumb" style="background-image:url('../assets/img/snl.png');" href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games" target="_blank" rel="noopener"></a>
+        <p class="proj-title">Snakes & Ladders 3D</p>
+        <p class="proj-desc">Multiplayer mobile game built with Unity &amp; Photon. 10M+ downloads. <a href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games" target="_blank" rel="noopener">Play Store &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" style="background-image:url('../assets/img/gcl_1.png');" href="https://play.google.com/store/apps/details?id=com.godspeedgames.cricket" target="_blank" rel="noopener"></a>
+        <p class="proj-title">Godspeed Cricket League</p>
+        <p class="proj-desc">3D cricket sim, FSM-based AI, mocap animation. 1M+ downloads. <a href="https://play.google.com/store/apps/details?id=com.godspeedgames.cricket" target="_blank" rel="noopener">Play Store &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" style="background-image:url('../assets/img/navy.png');" href="https://drive.google.com/file/d/1Udq8XPvte34j7uvpOfdeYWXh8hXE-z3F/view?usp=share_link" target="_blank" rel="noopener"></a>
+        <p class="proj-title">Navy Ship Training (VR)</p>
+        <p class="proj-desc">VR safety training app for Oculus Rift &amp; Vive, built for the Navy. <a href="https://drive.google.com/file/d/1Udq8XPvte34j7uvpOfdeYWXh8hXE-z3F/view?usp=share_link" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" style="background-image:url('../assets/img/fiber.jpg');" href="https://drive.google.com/file/d/1scSpaKQw1y_bJedtHDsHmkkl8OHkrGXG/view?usp=sharing" target="_blank" rel="noopener"></a>
+        <p class="proj-title">Fiber Network AR</p>
+        <p class="proj-desc">AR Foundation app for training field technicians on fiber network gear. <a href="https://drive.google.com/file/d/1scSpaKQw1y_bJedtHDsHmkkl8OHkrGXG/view?usp=sharing" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb" style="background-image:url('../assets/img/bt.png');"></div>
+        <p class="proj-title">Behavior Tree (Plugin)</p>
+        <p class="proj-desc">A custom xNode-based Behavior Tree editor, reused across multiple titles.</p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" style="background-image:url('../assets/img/devtool.png');" href="https://drive.google.com/file/d/1FywCTrSqEVWQd4TdiFviIB8CPfP20DFM/view?usp=share_link" target="_blank" rel="noopener"></a>
+        <p class="proj-title">Debug Tool (Plugin)</p>
+        <p class="proj-desc">Reflection-based in-game debug console used across many titles. <a href="https://drive.google.com/file/d/1FywCTrSqEVWQd4TdiFviIB8CPfP20DFM/view?usp=share_link" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+    </div>
+  </section>
 
   <hr>
 

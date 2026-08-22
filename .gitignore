@@ -1,0 +1,5 @@
+# added during pre-format cleanup
+.claude/
+node_modules/
+.env
+.DS_Store
