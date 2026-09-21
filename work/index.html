@@ -6,11 +6,27 @@
 <title>Mazhar Rajani - Independent Unity Developer</title>
 <meta name="description" content="Mazhar Rajani, independent Unity developer. Mobile games, VR/AR training sims, custom tools and visual effects.">
 <style>
+  :root {
+    color-scheme: dark;
+    --bg: #181A1B;
+    --text: #d6d9dc;
+    --heading: #f2f3f5;
+    --body: #c4c8cc;
+    --body-2: #aeb3b8;
+    --muted: #8b9197;
+    --faint: #767c82;
+    --link: #6cb2ff;
+    --link-hover: #a3cfff;
+    --rule: #33373a;
+    --rule-soft: #2a2d2f;
+    --thumb: #25282a;
+  }
+  html { background: var(--bg); }
   body {
     margin: 0;
     padding: 0 20px;
-    background: #ffffff;
-    color: #222222;
+    background: var(--bg);
+    color: var(--text);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.65;
   }
@@ -19,15 +35,15 @@
     margin: 0 auto;
   }
   a {
-    color: #1857a8;
+    color: var(--link);
   }
   a:hover {
-    color: #0d3a75;
+    color: var(--link-hover);
   }
   h1, h2 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 700;
-    color: #111111;
+    color: var(--heading);
   }
   header {
     padding: 56px 0 24px;
@@ -37,7 +53,7 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-size: 12px;
-    color: #777;
+    color: var(--muted);
     margin: 0 0 10px;
   }
   h1 {
@@ -47,7 +63,7 @@
   }
   header p.intro {
     font-size: 17px;
-    color: #333;
+    color: var(--body);
   }
   .links {
     margin-top: 22px;
@@ -59,7 +75,7 @@
   }
   hr {
     border: none;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--rule);
     margin: 40px 0;
   }
   h2 {
@@ -68,7 +84,7 @@
   }
   section p {
     font-size: 16px;
-    color: #333;
+    color: var(--body);
   }
   ul.work-list {
     list-style: none;
@@ -77,7 +93,7 @@
   }
   ul.work-list li {
     padding: 16px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--rule-soft);
   }
   ul.work-list li:last-child {
     border-bottom: none;
@@ -86,13 +102,13 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 15.5px;
-    color: #111;
+    color: var(--heading);
     display: block;
     margin-bottom: 4px;
   }
   ul.work-list .detail {
     font-size: 15px;
-    color: #444;
+    color: var(--body-2);
   }
   .tools-grid {
     display: grid;
@@ -116,18 +132,18 @@
     border-radius: 4px;
     background-size: cover;
     background-position: center;
-    background-color: #eee;
+    background-color: var(--thumb);
   }
   .proj-card p.proj-title {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 15.5px;
-    color: #111;
+    color: var(--heading);
     margin: 10px 0 3px;
   }
   .proj-card p.proj-desc {
     font-size: 14.5px;
-    color: #444;
+    color: var(--body-2);
     margin: 0;
   }
   .proj-card p.proj-desc a {
@@ -138,31 +154,31 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    color: #777;
+    color: var(--muted);
     margin: 0 0 8px;
   }
   .tools-grid p {
     font-size: 15px;
     margin: 0;
-    color: #333;
+    color: var(--body);
   }
   blockquote {
     margin: 0 0 26px;
     padding-left: 18px;
-    border-left: 3px solid #ddd;
+    border-left: 3px solid var(--rule);
     font-size: 16px;
-    color: #333;
+    color: var(--body);
   }
   blockquote p {
     margin: 0 0 8px;
     font-size: 16px;
-    color: #333;
+    color: var(--body);
   }
   blockquote cite {
     font-style: normal;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-    color: #888;
+    color: var(--muted);
   }
   .cta {
     padding: 30px 0 60px;
@@ -176,20 +192,20 @@
     font-weight: 600;
     font-size: 15px;
     padding: 10px 20px;
-    border: 1px solid #111;
-    color: #111;
+    border: 1px solid var(--heading);
+    color: var(--heading);
     text-decoration: none;
     border-radius: 4px;
   }
   .btn:hover {
-    background: #111;
-    color: #fff;
+    background: var(--heading);
+    color: var(--bg);
   }
   footer {
     padding: 24px 0 60px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-    color: #999;
+    color: var(--faint);
   }
 </style>
 </head>
