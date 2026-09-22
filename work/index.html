@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
 <title>Mazhar Rajani - Unity &amp; Unreal Development</title>
-<meta name="description" content="Mazhar Rajani. A small team building Unity and Unreal projects for training, simulation and games. Mobile games, VR/AR training sims, custom tools and visual effects.">
+<meta name="description" content="A small team building Unity and Unreal projects for training, simulation and games: mobile games, VR and AR training sims, custom tools and visual effects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mazhar-rajani.github.io/work/">
+<meta property="og:title" content="Mazhar Rajani - Unity &amp; Unreal Development">
+<meta property="og:description" content="A small team building Unity and Unreal projects for training, simulation and games: mobile games, VR and AR training sims, custom tools and visual effects.">
+<meta property="og:image" content="https://mazhar-rajani.github.io/assets/img/expertpath.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -90,11 +98,11 @@
   .proj-card .proj-thumb {
     display: block;
     aspect-ratio: 16 / 10;
-    background-size: cover;
-    background-position: center;
     background-color: var(--thumb);
   }
-  .proj-card p.proj-title {
+  .proj-card .proj-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .proj-card .proj-thumb:focus-visible { outline-offset: -3px; }
+  .proj-card h3.proj-title {
     color: var(--heading);
     font-weight: 600;
     font-size: 16px;
@@ -140,6 +148,19 @@
     font-size: 15px;
   }
   .btn:hover { background: var(--heading); color: var(--bg); text-decoration: none; }
+  @media print {
+    :root { --heading: #000; --text: #000; --body: #000; --body-2: #222; --muted: #444; --faint: #444; }
+    html, body { background: #fff; color: #000; }
+    .wrap { max-width: none; }
+    .proj-grid, .tools-grid, .quote-grid { display: block; }
+    .proj-card, .tools-grid > div, blockquote { break-inside: avoid; border-color: #bbb; background: #fff; }
+    .proj-card { margin-bottom: 14px; }
+    .proj-card .proj-thumb { display: none; }
+    .btn { border-color: #000; color: #000; }
+    a { color: #000; text-decoration: underline; }
+    a[href^="http"]::after, a[href^="mailto"]::after { content: " (" attr(href) ")"; font-size: 12px; word-break: break-all; }
+    hr, footer { border-color: #bbb; }
+  }
   footer {
     padding: 24px 0 60px;
     border-top: 1px solid var(--rule);
@@ -171,34 +192,34 @@
     <p>A small sample. More on the <a href="https://mazhar-rajani.github.io" target="_blank" rel="noopener">full portfolio</a>.</p>
     <div class="proj-grid">
       <div class="proj-card">
-        <a class="proj-thumb" style="background-image:url('https://img.youtube.com/vi/l0HwZQnCMjs/maxresdefault.jpg');" href="https://youtu.be/l0HwZQnCMjs" target="_blank" rel="noopener" aria-label="Surgical Precision Tool Training"></a>
-        <p class="proj-title">Surgical Precision Tool Training</p>
+        <a class="proj-thumb" href="https://youtu.be/l0HwZQnCMjs" target="_blank" rel="noopener" aria-label="Surgical Precision Tool Training"><img src="../assets/img/surgical.jpg" alt="Surgical Precision Tool Training" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Surgical Precision Tool Training</h3>
         <p class="proj-desc">Interactive 3D training where medical staff learn to handle surgical instruments before using them on patients. <a href="https://youtu.be/l0HwZQnCMjs" target="_blank" rel="noopener">Watch &rarr;</a></p>
       </div>
       <div class="proj-card">
-        <a class="proj-thumb" style="background-image:url('https://img.youtube.com/vi/McCpcAu6lIw/maxresdefault.jpg');" href="https://youtu.be/McCpcAu6lIw" target="_blank" rel="noopener" aria-label="Virtual Telehealth Training"></a>
-        <p class="proj-title">Virtual Telehealth Training</p>
-        <p class="proj-desc">Doctors practise remote consultations with 3D virtual patients who talk back, and get feedback after each session. <a href="https://youtu.be/McCpcAu6lIw" target="_blank" rel="noopener">Watch &rarr;</a></p>
+        <a class="proj-thumb" href="https://youtu.be/McCpcAu6lIw" target="_blank" rel="noopener" aria-label="Virtual Telehealth Training"><img src="../assets/img/telehealth.jpg" alt="Virtual Telehealth Training" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Virtual Telehealth Training</h3>
+        <p class="proj-desc">Doctors practice remote consultations with 3D virtual patients that respond, and get feedback after each session. <a href="https://youtu.be/McCpcAu6lIw" target="_blank" rel="noopener">Watch &rarr;</a></p>
       </div>
       <div class="proj-card">
-        <a class="proj-thumb" style="background-image:url('https://img.youtube.com/vi/8nEA7HbXSIw/maxresdefault.jpg');" href="https://youtu.be/8nEA7HbXSIw" target="_blank" rel="noopener" aria-label="3D Stall Booking"></a>
-        <p class="proj-title">3D Stall Booking</p>
+        <a class="proj-thumb" href="https://youtu.be/8nEA7HbXSIw" target="_blank" rel="noopener" aria-label="3D Stall Booking"><img src="../assets/img/stallbooking.jpg" alt="3D Stall Booking" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">3D Stall Booking</h3>
         <p class="proj-desc">Exhibitors walk through a 3D exhibition hall and book their stall directly, instead of reading a flat floor plan. <a href="https://youtu.be/8nEA7HbXSIw" target="_blank" rel="noopener">Watch &rarr;</a></p>
       </div>
       <div class="proj-card">
-        <a class="proj-thumb" style="background-image:url('../assets/img/solar.png');" href="https://youtu.be/4pJSFAe9ZhQ" target="_blank" rel="noopener" aria-label="AR Solar System"></a>
-        <p class="proj-title">AR Solar System</p>
+        <a class="proj-thumb" href="https://youtu.be/4pJSFAe9ZhQ" target="_blank" rel="noopener" aria-label="AR Solar System"><img src="../assets/img/solar.png" alt="AR Solar System" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">AR Solar System</h3>
         <p class="proj-desc">An AR app that puts a moving solar system on a classroom desk. Used by Dorado Learning. <a href="https://youtu.be/4pJSFAe9ZhQ" target="_blank" rel="noopener">Watch &rarr;</a></p>
       </div>
       <div class="proj-card">
-        <a class="proj-thumb" style="background-image:url('../assets/img/snl.png');" href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games" target="_blank" rel="noopener" aria-label="Snakes &amp; Ladders 3D"></a>
-        <p class="proj-title">Snakes &amp; Ladders 3D</p>
-        <p class="proj-desc">Real-time multiplayer mobile game. 10M+ downloads. <a href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games" target="_blank" rel="noopener">Play Store &rarr;</a></p>
+        <a class="proj-thumb" href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games" target="_blank" rel="noopener" aria-label="Snakes &amp; Ladders 3D"><img src="../assets/img/snl.png" alt="Snakes &amp; Ladders 3D" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Snakes &amp; Ladders 3D</h3>
+        <p class="proj-desc">Turn-based multiplayer board game built on Unity and Photon. 10M+ downloads. <a href="https://play.google.com/store/apps/details?id=com.idz.snakes.and.ladders.dice.board.games" target="_blank" rel="noopener">Play Store &rarr;</a></p>
       </div>
       <div class="proj-card">
-        <a class="proj-thumb" style="background-image:url('https://play-lh.googleusercontent.com/Q9NE1EudXgo50OK9TO3lvtViXwYev0vPDWsc8uorEhx2PU0rceo5OLL7kdAt6BxYQ6fYooDGaH5rm6-crE4QkA=w1052-h592');" href="https://play.google.com/store/apps/details?id=com.halfcarrot.festivalcoloring" target="_blank" rel="noopener" aria-label="Festival Coloring"></a>
-        <p class="proj-title">Festival Coloring</p>
-        <p class="proj-desc">Our own coloring game for kids, live on Google Play. 50+ pages for festivals like Diwali, Eid and Christmas. <a href="https://play.google.com/store/apps/details?id=com.halfcarrot.festivalcoloring" target="_blank" rel="noopener">Play Store &rarr;</a></p>
+        <a class="proj-thumb" href="https://play.google.com/store/apps/details?id=com.halfcarrot.festivalcoloring" target="_blank" rel="noopener" aria-label="Festival Coloring"><img src="../assets/img/festival.jpg" alt="Festival Coloring" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Festival Coloring</h3>
+        <p class="proj-desc">Mazhar's own coloring game for kids, live on Google Play. 50+ pages for festivals like Diwali, Eid and Christmas. <a href="https://play.google.com/store/apps/details?id=com.halfcarrot.festivalcoloring" target="_blank" rel="noopener">Play Store &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -233,7 +254,7 @@
       </li>
       <li>
         <span class="title">Mobile games, shipped and live</span>
-        <span class="detail">Shipped at Godspeed Games: Snakes & Ladders 3D (real-time multiplayer, 10M+ downloads), Godspeed Cricket League (computer-controlled players and motion-captured animation, 1M+ downloads), Match Harmony (a competitive tournament puzzle game, including the iOS version), and a few kids' coloring and drawing games with a custom coloring system, also 1M+ downloads.</span>
+        <span class="detail">Shipped at GodSpeed Games: Snakes &amp; Ladders 3D (Photon turn-based multiplayer, 10M+ downloads), GodSpeed Cricket League (computer-controlled players and motion-capture animation integration, 1M+ downloads), Match Harmony (a competitive tournament puzzle game, including the iOS version), and two kids' coloring and drawing games built on a reusable coloring system, 1M+ downloads combined.</span>
       </li>
       <li>
         <span class="title">3D apps for businesses</span>
@@ -250,7 +271,7 @@
 
   <section>
     <h2>How we fit into your team</h2>
-    <p>We've worked both in-house and as outside contractors, so we're used to fitting into however a team already runs. We don't insist on our own tools or process.</p>
+    <p>Mazhar has worked in-house at studios and as an outside contractor, so we know how a team looks from both sides. We fit into however yours already runs, and we don't insist on our own tools or process.</p>
     <div class="tools-grid">
       <div>
         <h3>Project management</h3>
