@@ -29,12 +29,12 @@
       "game"
     ]
   },
-  "Godspeed Cricket League": {
+  "GodSpeed Cricket League": {
     "hash": "20bdf4c4b3f4ec09",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.97,
-      "vr": 0.03,
+      "vr": 0.04,
       "ar": 0.02,
       "training": 0.2,
       "tool": 0.06,
@@ -93,14 +93,14 @@
     ]
   },
   "Match Harmony": {
-    "hash": "ac14afbdc099e6c6",
+    "hash": "2bdfc69286376759",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.98,
       "vr": 0.01,
-      "ar": 0.02,
+      "ar": 0.01,
       "training": 0.02,
-      "tool": 0.04,
+      "tool": 0.03,
       "graphics": 0.04
     },
     "tags": [
@@ -154,14 +154,14 @@
     ]
   },
   "Super Climber": {
-    "hash": "98b3b71858a09f5e",
+    "hash": "03f315c279c04414",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.98,
       "vr": 0.06,
       "ar": 0.03,
       "training": 0.03,
-      "tool": 0.12,
+      "tool": 0.11,
       "graphics": 0.07
     },
     "tags": [
@@ -169,14 +169,14 @@
     ]
   },
   "Isometric Decoration Game": {
-    "hash": "3de1be283011d563",
+    "hash": "a471979b31bd5b54",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.94,
+      "game": 0.93,
       "vr": 0.04,
       "ar": 0.03,
       "training": 0.04,
-      "tool": 0.13,
+      "tool": 0.12,
       "graphics": 0.2
     },
     "tags": [
@@ -184,7 +184,7 @@
     ]
   },
   "2D Boat Game": {
-    "hash": "bf36eb5fb267b12a",
+    "hash": "a0bf366eb12cd3a4",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.96,
@@ -192,7 +192,7 @@
       "ar": 0.02,
       "training": 0.05,
       "tool": 0.09,
-      "graphics": 0.42
+      "graphics": 0.43
     },
     "tags": [
       "game"
@@ -230,7 +230,7 @@
     ]
   },
   "Unwrapping Game": {
-    "hash": "ab65dee790161912",
+    "hash": "ff8b0e1ace95ef7f",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.97,
@@ -238,21 +238,21 @@
       "ar": 0.04,
       "training": 0.03,
       "tool": 0.08,
-      "graphics": 0.46
+      "graphics": 0.47
     },
     "tags": [
       "game"
     ]
   },
   "Water Shaders": {
-    "hash": "307ab898993286bf",
+    "hash": "80d3c089f5833393",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.08,
       "vr": 0.05,
-      "ar": 0.02,
+      "ar": 0.03,
       "training": 0.03,
-      "tool": 0.3,
+      "tool": 0.29,
       "graphics": 0.98
     },
     "tags": [
