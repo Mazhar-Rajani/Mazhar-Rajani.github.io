@@ -5,205 +5,149 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mazhar Rajani - Unity &amp; Unreal Development</title>
 <meta name="description" content="Mazhar Rajani. A small team building Unity and Unreal projects for training, simulation and games. Mobile games, VR/AR training sims, custom tools and visual effects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<meta name="theme-color" content="#121416">
 <style>
   :root {
     color-scheme: dark;
-    --bg: #181A1B;
-    --text: #d6d9dc;
-    --heading: #f2f3f5;
-    --body: #c4c8cc;
-    --body-2: #aeb3b8;
-    --muted: #8b9197;
-    --faint: #767c82;
+    --bg: #121416;
+    --surface: #181b1e;
+    --surface-2: #202428;
+    --rule: #2a2e33;
+    --rule-strong: #3a3f45;
+    --heading: #eceef0;
+    --text: #c6cacf;
+    --body: #c6cacf;
+    --body-2: #b2b8be;
+    --muted: #8f969d;
+    --faint: #7b8288;
     --link: #6cb2ff;
     --link-hover: #a3cfff;
-    --rule: #33373a;
-    --rule-soft: #2a2d2f;
-    --thumb: #25282a;
+    --thumb: #202428;
   }
+  * { box-sizing: border-box; }
   html { background: var(--bg); }
   body {
     margin: 0;
-    padding: 0 20px;
+    padding: 0 24px;
     background: var(--bg);
     color: var(--text);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
     line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap {
-    max-width: 680px;
-    margin: 0 auto;
-  }
-  a {
-    color: var(--link);
-  }
-  a:hover {
-    color: var(--link-hover);
-  }
-  h1, h2 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    color: var(--heading);
-  }
-  header {
-    padding: 56px 0 24px;
-  }
+  @media (max-width: 600px) { body { padding: 0 16px; } }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+  h1, h2, h3 { color: var(--heading); font-weight: 700; margin: 0; line-height: 1.25; }
+  header { padding: 64px 0 28px; }
   header p.tag {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    font-size: 12px;
     color: var(--muted);
+    font-size: 14px;
     margin: 0 0 10px;
   }
-  h1 {
-    font-size: 30px;
-    margin: 0 0 18px;
-    line-height: 1.3;
-  }
-  header p.intro {
-    font-size: 17px;
-    color: var(--body);
-  }
+  h1 { font-size: clamp(26px, 4vw, 34px); margin: 0 0 18px; }
+  header p.intro { font-size: 17px; color: var(--body); margin: 0; }
   .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
     margin-top: 22px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
   }
-  .links a {
-    margin-right: 16px;
-  }
-  hr {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 40px 0;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 0 0 18px;
-  }
-  section p {
-    font-size: 16px;
-    color: var(--body);
-  }
-  ul.work-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  ul.work-list li {
-    padding: 16px 0;
-    border-bottom: 1px solid var(--rule-soft);
-  }
-  ul.work-list li:last-child {
-    border-bottom: none;
-  }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+  h2 { font-size: 22px; margin: 0 0 18px; }
+  section p { font-size: 16px; color: var(--body); }
+  ul.work-list { list-style: none; padding: 0; margin: 0; }
+  ul.work-list li { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  ul.work-list li:last-child { border-bottom: none; }
   ul.work-list .title {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 15.5px;
-    color: var(--heading);
     display: block;
     margin-bottom: 4px;
+    color: var(--heading);
+    font-weight: 600;
+    font-size: 16px;
   }
-  ul.work-list .detail {
-    font-size: 15px;
-    color: var(--body-2);
+  ul.work-list .detail { font-size: 15.5px; color: var(--body-2); }
+  .tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .tools-grid > div {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 18px 20px;
   }
-  .tools-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
-  @media (max-width: 500px) {
-    .tools-grid { grid-template-columns: 1fr; }
-  }
-  .proj-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px 24px;
-  }
-  @media (max-width: 500px) {
-    .proj-grid { grid-template-columns: 1fr; }
+  .tools-grid h3 { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
+  .tools-grid p { font-size: 15px; margin: 0; color: var(--body); }
+  @media (max-width: 560px) { .tools-grid { grid-template-columns: 1fr; } }
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 560px) { .proj-grid { grid-template-columns: 1fr; } }
+  .proj-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    overflow: hidden;
   }
   .proj-card .proj-thumb {
     display: block;
     aspect-ratio: 16 / 10;
-    border-radius: 4px;
     background-size: cover;
     background-position: center;
     background-color: var(--thumb);
   }
   .proj-card p.proj-title {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 15.5px;
     color: var(--heading);
-    margin: 10px 0 3px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 14px 16px 2px;
   }
   .proj-card p.proj-desc {
-    font-size: 14.5px;
+    font-size: 15px;
     color: var(--body-2);
     margin: 0;
+    padding: 0 16px 16px;
   }
-  .proj-card p.proj-desc a {
-    font-size: 13px;
-  }
-  .tools-grid h3 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--muted);
-    margin: 0 0 8px;
-  }
-  .tools-grid p {
-    font-size: 15px;
-    margin: 0;
-    color: var(--body);
-  }
+  .proj-card p.proj-desc a { font-size: 14px; white-space: nowrap; }
   blockquote {
-    margin: 0 0 26px;
-    padding-left: 18px;
-    border-left: 3px solid var(--rule);
-    font-size: 16px;
-    color: var(--body);
+    margin: 0 0 20px;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--rule-strong);
+    border-radius: 6px;
   }
-  blockquote p {
-    margin: 0 0 8px;
-    font-size: 16px;
-    color: var(--body);
+  blockquote p { margin: 0 0 8px; font-size: 15.5px; color: var(--body); }
+  blockquote cite { font-style: normal; font-size: 14px; color: var(--muted); }
+  .header-cta { margin: 26px 0 0; }
+  .quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
   }
-  blockquote cite {
-    font-style: normal;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    color: var(--muted);
-  }
-  .cta {
-    padding: 30px 0 60px;
-  }
-  .cta p {
-    font-size: 16px;
-  }
+  .quote-grid blockquote { margin: 0; }
+  @media (max-width: 640px) { .quote-grid { grid-template-columns: 1fr; } }
+  .cta { padding: 30px 0 60px; }
+  .cta p { font-size: 16px; }
   .btn {
     display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+    margin-top: 6px;
     padding: 10px 20px;
     border: 1px solid var(--heading);
+    border-radius: 6px;
     color: var(--heading);
-    text-decoration: none;
-    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
   }
-  .btn:hover {
-    background: var(--heading);
-    color: var(--bg);
-  }
+  .btn:hover { background: var(--heading); color: var(--bg); text-decoration: none; }
   footer {
     padding: 24px 0 60px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border-top: 1px solid var(--rule);
     font-size: 13px;
     color: var(--faint);
   }
@@ -223,6 +167,7 @@
       <a href="https://www.fiverr.com/mazharrajani?public_mode=true" target="_blank" rel="noopener">Fiverr</a>
       <a href="https://mazhar-rajani.github.io" target="_blank" rel="noopener">Full portfolio</a>
     </div>
+    <p class="header-cta"><a class="btn" href="https://calendly.com/mazharrajani" target="_blank" rel="noopener">Book a call</a></p>
   </header>
 
   <hr>
@@ -328,6 +273,7 @@
 
   <section>
     <h2>What people have said</h2>
+    <div class="quote-grid">
     <blockquote>
       <p>"Once again expectations were exceeded. Best freelance hire I've had and I've had a lot! Willing to change course if something isn't working, very patient, amazing problem solver."</p>
       <cite>jongarsman1076, repeat client, Fiverr</cite>
@@ -348,6 +294,7 @@
       <p>"Really impressed by professional approach to work and flexibility."</p>
       <cite>Kushal Mudaliyar, Co-Founder, SwachhAI</cite>
     </blockquote>
+    </div>
   </section>
 
   <hr>
