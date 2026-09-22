@@ -1,53 +1,23 @@
-<!-- Project Tile template -->
-<div class="col-md-4 projectcol" style="padding-left: 3%;padding-right: 3%;padding-top: 3%;padding-bottom: 3%;">
-    <a href="projects/sampleproject.html">
-        <div class="work-item" style="height: 350px;
-                                        border: 1.8px solid;
-                                        border-color: #545454;
-                                        border-radius: 5px;
-                                        position: relative;
-                                        transition: all .3s ease-in-out;
-                                        overflow: hidden;">
-                <!-- Change the image url with project image -->
-                <div class="work-item-bg" style="background-image: url('assets/img/fortnite.jpg');
-                                            position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        background-color: black;
-                                        background-size: cover;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        transition: all .3s ease-in-out;">
-                </div>
-            <!-- Project Title Start -->
-            <div class="work-item-title-container">
-                <div class="work-item-title">
-                    <span>Sample Name</span>
-                </div>
-            </div>
-            <!-- Project Title End -->
-        </div>
-    </a>
-    <!-- Tags start -->
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(255,0,0);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">python</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">AAA</button>
-    <button class="btn btn-primary" type="button" style="height: auto;background: rgb(129,55,114);padding: 2%;font-size: 12px;margin: 4%;margin-left: 0;border-style: none;">ubisoft</button>
-    <!-- Tags End -->
-
-    <!-- About Project -->
-    <p style="border-color: rgb(255,255,255);color: rgb(255,255,255);font-family: Quicksand, sans-serif;padding-left: 5%;">
-        Game Programmer at Ubisoft / Massive Entertainment, working on Avatar: Frontiers of Pandora.<br>
-    </p>
-    <!-- About Project End -->s
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;font-size: 20px;">My contributions :</p>
-
-    <!-- Contributions/Highlights Start -->
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Melee + ranged combat system<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-    <p style="color: rgb(255,255,255);font-family: Quicksand, sans-serif;margin-bottom: 10px;"><i class="fas fa-check" style="margin: 5px;"></i>Finite state machine in C++<br></p>
-    <!-- Contributions/Highlights end -->
-</div>
+<!-- Project Tile template (Project Name)-->
+<!-- Paste between the ADD PROJECT TEMPLATE markers in index.html, then run
+     python tools/tag_projects.py to fill in data-tags (the category filters).
+     data-section: professional | freelance | personal
+     project-origin: studio or client name, or Professional / Freelance / Personal.
+     Leave out the <details> block if there are no contributions to list. -->
+<article class="project" data-section="personal" data-tags="">
+    <a class="project-media" href="https://example.com" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/fortnite.jpg" alt="" loading="lazy"></a>
+    <div class="project-body">
+        <p class="project-origin">Personal</p>
+        <h3 class="project-title"><a href="https://example.com" target="_blank" rel="noopener">Project Name</a></h3>
+        <p class="project-desc">One or two sentences about the project.</p>
+        <ul class="project-tech"><li>C#</li><li>Unity</li></ul>
+        <details class="project-contrib">
+            <summary>My contributions</summary>
+            <ul>
+                <li class="contrib-item">First contribution</li>
+                <li class="contrib-item">Second contribution</li>
+            </ul>
+        </details>
+    </div>
+</article>
 <!-- Project Tile template End-->
