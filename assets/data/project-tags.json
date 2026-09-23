@@ -30,15 +30,15 @@
     ]
   },
   "GodSpeed Cricket League": {
-    "hash": "4fcd4b6d0a2dd3ba",
+    "hash": "ac649ab9494e5881",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.97,
+      "game": 0.96,
       "vr": 0.04,
       "ar": 0.03,
-      "training": 0.2,
+      "training": 0.17,
       "tool": 0.06,
-      "graphics": 0.2
+      "graphics": 0.19
     },
     "tags": [
       "game"
@@ -614,13 +614,13 @@
     ]
   },
   "Drag Cricket": {
-    "hash": "93aac1f8e62e1da7",
+    "hash": "f37f30d1ebd80e01",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.98,
       "vr": 0.03,
-      "ar": 0.02,
-      "training": 0.04,
+      "ar": 0.03,
+      "training": 0.03,
       "tool": 0.05,
       "graphics": 0.07
     },
@@ -629,15 +629,15 @@
     ]
   },
   "Amogus": {
-    "hash": "fad741003df29c24",
+    "hash": "8cbe1fefc0c91635",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.14,
-      "vr": 0.06,
+      "game": 0.15,
+      "vr": 0.07,
       "ar": 0.03,
       "training": 0.08,
-      "tool": 0.07,
-      "graphics": 0.86
+      "tool": 0.06,
+      "graphics": 0.84
     },
     "tags": [
       "graphics"
