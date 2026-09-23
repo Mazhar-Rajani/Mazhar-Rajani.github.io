@@ -1,10 +1,10 @@
 {
   "Snakes & Ladders 3D": {
-    "hash": "7609e55fe7dc721d",
+    "hash": "24e6a24052147355",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.98,
-      "vr": 0.02,
+      "vr": 0.03,
       "ar": 0.02,
       "training": 0.02,
       "tool": 0.07,
@@ -30,12 +30,12 @@
     ]
   },
   "GodSpeed Cricket League": {
-    "hash": "20bdf4c4b3f4ec09",
+    "hash": "4fcd4b6d0a2dd3ba",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.97,
       "vr": 0.04,
-      "ar": 0.02,
+      "ar": 0.03,
       "training": 0.2,
       "tool": 0.06,
       "graphics": 0.2
@@ -45,7 +45,7 @@
     ]
   },
   "Expert Path VR": {
-    "hash": "20104ff07b22c92c",
+    "hash": "47b9b2885dbabb73",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.03,
@@ -61,15 +61,15 @@
     ]
   },
   "Fire Extinguisher WebGL": {
-    "hash": "580e5b307492ac25",
+    "hash": "e5485c5c11210a01",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.03,
-      "vr": 0.9,
+      "vr": 0.89,
       "ar": 0.07,
-      "training": 0.99,
-      "tool": 0.06,
-      "graphics": 0.2
+      "training": 0.98,
+      "tool": 0.07,
+      "graphics": 0.21
     },
     "tags": [
       "vr",
@@ -77,15 +77,15 @@
     ]
   },
   "Fiber Network AR": {
-    "hash": "9a6414b49b462fc3",
+    "hash": "71f5bed535087b78",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.02,
       "vr": 0.03,
-      "ar": 0.98,
+      "ar": 0.99,
       "training": 0.98,
-      "tool": 0.08,
-      "graphics": 0.12
+      "tool": 0.09,
+      "graphics": 0.13
     },
     "tags": [
       "ar",
@@ -93,7 +93,7 @@
     ]
   },
   "Match Harmony": {
-    "hash": "2bdfc69286376759",
+    "hash": "9feb44f208d30076",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.98,
@@ -108,14 +108,14 @@
     ]
   },
   "Coloring Games for Kids": {
-    "hash": "6e9cf844750d6fe8",
+    "hash": "a9f4bc1ea8a0387a",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.96,
+      "game": 0.97,
       "vr": 0.02,
       "ar": 0.02,
       "training": 0.06,
-      "tool": 0.35,
+      "tool": 0.31,
       "graphics": 0.75
     },
     "tags": [
@@ -124,29 +124,29 @@
     ]
   },
   "Kids Drawing Games": {
-    "hash": "25b94ccb8c44d195",
+    "hash": "6fef35002bc300eb",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.92,
       "vr": 0.02,
       "ar": 0.03,
-      "training": 0.4,
-      "tool": 0.13,
-      "graphics": 0.2
+      "training": 0.38,
+      "tool": 0.14,
+      "graphics": 0.21
     },
     "tags": [
       "game"
     ]
   },
   "Farm sim game": {
-    "hash": "56852a6d467a988a",
+    "hash": "1c0ee4674d32bbe9",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.96,
+      "game": 0.97,
       "vr": 0.02,
       "ar": 0.01,
       "training": 0.06,
-      "tool": 0.16,
+      "tool": 0.15,
       "graphics": 0.08
     },
     "tags": [
@@ -169,44 +169,44 @@
     ]
   },
   "Isometric Decoration Game": {
-    "hash": "a471979b31bd5b54",
+    "hash": "97704d8bdde9ee2e",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.93,
       "vr": 0.04,
       "ar": 0.03,
-      "training": 0.04,
-      "tool": 0.12,
-      "graphics": 0.2
+      "training": 0.05,
+      "tool": 0.14,
+      "graphics": 0.22
     },
     "tags": [
       "game"
     ]
   },
   "2D Boat Game": {
-    "hash": "a0bf366eb12cd3a4",
+    "hash": "0dd98c6fb7fdb58a",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.96,
       "vr": 0.02,
       "ar": 0.02,
       "training": 0.05,
-      "tool": 0.09,
-      "graphics": 0.43
+      "tool": 0.11,
+      "graphics": 0.41
     },
     "tags": [
       "game"
     ]
   },
   "Watercolor painting": {
-    "hash": "ad13bcc6869a2554",
+    "hash": "84bdc36a5f4be134",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.15,
+      "game": 0.11,
       "vr": 0.04,
-      "ar": 0.05,
-      "training": 0.08,
-      "tool": 0.9,
+      "ar": 0.04,
+      "training": 0.09,
+      "tool": 0.86,
       "graphics": 0.95
     },
     "tags": [
@@ -215,30 +215,30 @@
     ]
   },
   "Polishing Game": {
-    "hash": "214abfc01ed536c8",
+    "hash": "52eb232c20d3da41",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.95,
-      "vr": 0.11,
+      "game": 0.96,
+      "vr": 0.1,
       "ar": 0.03,
-      "training": 0.09,
-      "tool": 0.09,
-      "graphics": 0.39
+      "training": 0.08,
+      "tool": 0.08,
+      "graphics": 0.32
     },
     "tags": [
       "game"
     ]
   },
   "Unwrapping Game": {
-    "hash": "ff8b0e1ace95ef7f",
+    "hash": "19deb3064b57ef46",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.97,
-      "vr": 0.07,
+      "vr": 0.06,
       "ar": 0.04,
       "training": 0.03,
-      "tool": 0.08,
-      "graphics": 0.47
+      "tool": 0.07,
+      "graphics": 0.49
     },
     "tags": [
       "game"
@@ -260,14 +260,14 @@
     ]
   },
   "Debug Tool": {
-    "hash": "cb1a5c45f7d1f133",
+    "hash": "90bb958116997fcc",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.03,
-      "vr": 0.03,
+      "vr": 0.04,
       "ar": 0.02,
       "training": 0.04,
-      "tool": 0.98,
+      "tool": 0.97,
       "graphics": 0.03
     },
     "tags": [
@@ -275,7 +275,7 @@
     ]
   },
   "Behavior Tree Plugin": {
-    "hash": "fa9ae548847544ed",
+    "hash": "888aadabad5bf627",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.04,
@@ -306,29 +306,29 @@
     ]
   },
   "AR Measurement": {
-    "hash": "0d33f31387673ebc",
+    "hash": "125f797378553eb9",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.05,
       "vr": 0.03,
       "ar": 0.98,
-      "training": 0.48,
+      "training": 0.49,
       "tool": 0.09,
-      "graphics": 0.51
+      "graphics": 0.52
     },
     "tags": [
       "ar"
     ]
   },
   "Navy Ship Training": {
-    "hash": "58036984232432df",
+    "hash": "7a32d83f7f8133ea",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.03,
       "vr": 0.98,
-      "ar": 0.02,
+      "ar": 0.03,
       "training": 0.98,
-      "tool": 0.11,
+      "tool": 0.1,
       "graphics": 0.08
     },
     "tags": [
@@ -337,15 +337,15 @@
     ]
   },
   "Forklift Sim": {
-    "hash": "d90a520035ce1a31",
+    "hash": "9cc023c1e411f72e",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.05,
+      "game": 0.04,
       "vr": 0.98,
       "ar": 0.02,
       "training": 0.98,
       "tool": 0.05,
-      "graphics": 0.08
+      "graphics": 0.09
     },
     "tags": [
       "vr",
@@ -369,15 +369,15 @@
     ]
   },
   "Solar System AR": {
-    "hash": "11a1101c9d69f579",
+    "hash": "a09b6d226b454938",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.04,
       "vr": 0.03,
       "ar": 0.98,
-      "training": 0.92,
-      "tool": 0.06,
-      "graphics": 0.26
+      "training": 0.97,
+      "tool": 0.05,
+      "graphics": 0.3
     },
     "tags": [
       "ar",
@@ -385,15 +385,15 @@
     ]
   },
   "Human Brain VR": {
-    "hash": "b9ef70f00ca1c474",
+    "hash": "bb14a36694f2b07b",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.05,
       "vr": 0.98,
       "ar": 0.02,
-      "training": 0.95,
+      "training": 0.94,
       "tool": 0.05,
-      "graphics": 0.15
+      "graphics": 0.14
     },
     "tags": [
       "vr",
@@ -401,15 +401,15 @@
     ]
   },
   "Visionarium": {
-    "hash": "32cde5708f01c190",
+    "hash": "258bb19c16f522cc",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.36,
+      "game": 0.39,
       "vr": 0.98,
       "ar": 0.02,
-      "training": 0.03,
+      "training": 0.04,
       "tool": 0.06,
-      "graphics": 0.63
+      "graphics": 0.74
     },
     "tags": [
       "vr",
@@ -417,58 +417,59 @@
     ]
   },
   "Visionarium 2": {
-    "hash": "fbfbf0b31897e9b1",
+    "hash": "a840f4d217af78c1",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.44,
+      "game": 0.43,
       "vr": 0.98,
       "ar": 0.02,
       "training": 0.03,
-      "tool": 0.07,
-      "graphics": 0.52
+      "tool": 0.08,
+      "graphics": 0.71
     },
     "tags": [
-      "vr"
+      "vr",
+      "graphics"
     ]
   },
   "Music Sequencer": {
-    "hash": "0d91ade219418afb",
+    "hash": "2622b106a2115ea2",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.06,
+      "game": 0.07,
       "vr": 0.03,
       "ar": 0.02,
       "training": 0.08,
-      "tool": 0.09,
+      "tool": 0.1,
       "graphics": 0.03
     },
     "tags": []
   },
   "Aurelius": {
-    "hash": "501fcf1427bb63e2",
+    "hash": "b25f0cb8e80d1a7f",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.16,
-      "vr": 0.08,
-      "ar": 0.06,
-      "training": 0.94,
-      "tool": 0.05,
-      "graphics": 0.07
+      "game": 0.17,
+      "vr": 0.14,
+      "ar": 0.07,
+      "training": 0.93,
+      "tool": 0.06,
+      "graphics": 0.08
     },
     "tags": [
       "training"
     ]
   },
   "Substation Visualization": {
-    "hash": "590e0ae8ff4b03f6",
+    "hash": "cb3af108f223c7cb",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.05,
       "vr": 0.98,
       "ar": 0.02,
-      "training": 0.74,
+      "training": 0.79,
       "tool": 0.05,
-      "graphics": 0.8
+      "graphics": 0.81
     },
     "tags": [
       "vr",
@@ -477,15 +478,15 @@
     ]
   },
   "Flight Game Terrains": {
-    "hash": "772337dc839c219f",
+    "hash": "cce497e9ecdd9936",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.55,
+      "game": 0.56,
       "vr": 0.09,
       "ar": 0.04,
-      "training": 0.22,
-      "tool": 0.13,
-      "graphics": 0.8
+      "training": 0.24,
+      "tool": 0.14,
+      "graphics": 0.78
     },
     "tags": [
       "game",
@@ -508,11 +509,11 @@
     ]
   },
   "Minesweeper": {
-    "hash": "b33ae820adb64a72",
+    "hash": "e54523a0d867cebb",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.97,
-      "vr": 0.03,
+      "vr": 0.02,
       "ar": 0.02,
       "training": 0.07,
       "tool": 0.05,
@@ -523,43 +524,43 @@
     ]
   },
   "Free Flow": {
-    "hash": "1d26799cf23761b0",
+    "hash": "992cb54d171b1654",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.93,
-      "vr": 0.07,
+      "game": 0.96,
+      "vr": 0.04,
       "ar": 0.02,
       "training": 0.05,
-      "tool": 0.17,
-      "graphics": 0.07
+      "tool": 0.14,
+      "graphics": 0.04
     },
     "tags": [
       "game"
     ]
   },
   "Clock": {
-    "hash": "13cca6d24990d2dd",
+    "hash": "dd13919bcf7e8b8a",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.04,
       "vr": 0.04,
-      "ar": 0.02,
+      "ar": 0.03,
       "training": 0.06,
-      "tool": 0.12,
-      "graphics": 0.9
+      "tool": 0.14,
+      "graphics": 0.89
     },
     "tags": [
       "graphics"
     ]
   },
   "Verdant World": {
-    "hash": "1d7cc0579a8db3f5",
+    "hash": "698a2df760ff744a",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.95,
       "vr": 0.03,
       "ar": 0.02,
-      "training": 0.05,
+      "training": 0.04,
       "tool": 0.04,
       "graphics": 0.13
     },
@@ -583,12 +584,12 @@
     ]
   },
   "Keys": {
-    "hash": "1d703ac0c5783ecf",
+    "hash": "79dad6b0d93a5a11",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.08,
       "vr": 0.02,
-      "ar": 0.03,
+      "ar": 0.02,
       "training": 0.04,
       "tool": 0.07,
       "graphics": 0.85
@@ -598,29 +599,29 @@
     ]
   },
   "Tic Tac Toe": {
-    "hash": "2f99d4fa9510184b",
+    "hash": "ab1856b7d6cb352c",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.91,
+      "game": 0.95,
       "vr": 0.04,
       "ar": 0.03,
-      "training": 0.1,
-      "tool": 0.07,
-      "graphics": 0.2
+      "training": 0.09,
+      "tool": 0.06,
+      "graphics": 0.19
     },
     "tags": [
       "game"
     ]
   },
   "Drag Cricket": {
-    "hash": "478c7a89c8f9ffb9",
+    "hash": "93aac1f8e62e1da7",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.98,
       "vr": 0.03,
-      "ar": 0.03,
+      "ar": 0.02,
       "training": 0.04,
-      "tool": 0.04,
+      "tool": 0.05,
       "graphics": 0.07
     },
     "tags": [
@@ -628,29 +629,29 @@
     ]
   },
   "Amogus": {
-    "hash": "1d3e808d62473417",
+    "hash": "fad741003df29c24",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.11,
-      "vr": 0.05,
+      "game": 0.14,
+      "vr": 0.06,
       "ar": 0.03,
       "training": 0.08,
       "tool": 0.07,
-      "graphics": 0.85
+      "graphics": 0.86
     },
     "tags": [
       "graphics"
     ]
   },
   "Flag": {
-    "hash": "29eb5def30f3572b",
+    "hash": "de3c48fd9ddbf0a3",
     "model": "jev-1.13.0",
     "probabilities": {
-      "game": 0.03,
+      "game": 0.04,
       "vr": 0.03,
       "ar": 0.02,
       "training": 0.06,
-      "tool": 0.15,
+      "tool": 0.17,
       "graphics": 0.98
     },
     "tags": [
@@ -658,7 +659,7 @@
     ]
   },
   "Blender": {
-    "hash": "9ba56a7aaa0aeb3e",
+    "hash": "6db08958231eae45",
     "model": "jev-1.13.0",
     "probabilities": {
       "game": 0.02,
