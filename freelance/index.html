@@ -2,12 +2,340 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mazhar Rajani - Work</title>
-<meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=../work/">
-<script>location.replace("../work/" + location.hash);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Freelance Unity Developer | Mazhar Rajani</title>
+<meta name="description" content="I'm Mazhar Rajani, a freelance Unity developer with 8+ years in XR and interactive 3D. I build VR and AR training, browser 3D, mobile games, editor tools and visual effects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mazhar-rajani.github.io/freelance/">
+<meta property="og:title" content="Freelance Unity Developer | Mazhar Rajani">
+<meta property="og:description" content="I'm Mazhar Rajani, a freelance Unity developer with 8+ years in XR and interactive 3D. I build VR and AR training, browser 3D, mobile games, editor tools and visual effects.">
+<meta property="og:image" content="https://mazhar-rajani.github.io/assets/img/surgical.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<meta name="theme-color" content="#121416">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #121416;
+    --surface: #181b1e;
+    --surface-2: #202428;
+    --rule: #2a2e33;
+    --rule-strong: #3a3f45;
+    --heading: #eceef0;
+    --text: #c6cacf;
+    --body: #c6cacf;
+    --body-2: #b2b8be;
+    --muted: #8f969d;
+    --faint: #7b8288;
+    --link: #6cb2ff;
+    --link-hover: #a3cfff;
+    --thumb: #202428;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    padding: 0 24px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (max-width: 600px) { body { padding: 0 16px; } }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  /* Keep running text at a readable measure even though the shell is wide. */
+  header p.intro, section > p, .work-list .detail, blockquote p { max-width: 72ch; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+  h1, h2, h3 { color: var(--heading); font-weight: 700; margin: 0; line-height: 1.25; }
+  header { padding: 72px 0 32px; }
+  h1 { font-size: clamp(24px, 2.4vw, 30px); max-width: 30ch; margin: 0 0 16px; }
+  header p.intro { font-size: 16.5px; color: var(--body); margin: 0; }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    margin-top: 22px;
+    font-size: 15px;
+  }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 52px 0; }
+  h2 { font-size: 22px; margin: 0 0 18px; }
+  section p { font-size: 16px; color: var(--body); }
+  ul.work-list { list-style: none; padding: 0; margin: 0; }
+  @media (min-width: 900px) {
+    ul.work-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+    ul.work-list li { border-bottom: none; border-top: 1px solid var(--rule); padding: 14px 0; }
+    ul.work-list li:nth-child(-n+2) { border-top: none; padding-top: 0; }
+  }
+  ul.work-list li { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  ul.work-list li:last-child { border-bottom: none; }
+  ul.work-list .title {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--heading);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  ul.work-list .detail { font-size: 15.5px; color: var(--body-2); }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  .tools-grid > div {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 18px 20px;
+  }
+  .tools-grid h3 { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
+  .tools-grid p { font-size: 15px; margin: 0; color: var(--body); }
+  @media (max-width: 560px) { .tools-grid { grid-template-columns: 1fr; } }
+  .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+  .proj-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .proj-card .proj-thumb {
+    display: block;
+    aspect-ratio: 16 / 10;
+    background-color: var(--thumb);
+  }
+  .proj-card .proj-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .proj-card .proj-thumb:focus-visible { outline-offset: -3px; }
+  .proj-card h3.proj-title {
+    color: var(--heading);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 14px 16px 2px;
+  }
+  .proj-card p.proj-desc {
+    font-size: 15px;
+    color: var(--body-2);
+    margin: 0;
+    padding: 0 16px 16px;
+  }
+  .proj-card p.proj-desc a { font-size: 14px; white-space: nowrap; }
+  blockquote {
+    margin: 0 0 20px;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--rule-strong);
+    border-radius: 6px;
+  }
+  blockquote p { margin: 0 0 8px; font-size: 15.5px; color: var(--body); }
+  blockquote cite { font-style: normal; font-size: 14px; color: var(--muted); }
+  .header-cta { margin: 26px 0 0; }
+  .quote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+  .quote-grid blockquote { margin: 0; }
+  @media (max-width: 640px) { .quote-grid { grid-template-columns: 1fr; } }
+  .cta { padding: 30px 0 60px; }
+  .cta p { font-size: 16px; }
+  .btn {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 10px 20px;
+    border: 1px solid var(--heading);
+    border-radius: 6px;
+    color: var(--heading);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .btn:hover { background: var(--heading); color: var(--bg); text-decoration: none; }
+  @media print {
+    :root { --heading: #000; --text: #000; --body: #000; --body-2: #222; --muted: #444; --faint: #444; }
+    html, body { background: #fff; color: #000; }
+    .wrap { max-width: none; }
+    .proj-grid, .tools-grid, .quote-grid { display: block; }
+    .proj-card, .tools-grid > div, blockquote { break-inside: avoid; border-color: #bbb; background: #fff; }
+    .proj-card { margin-bottom: 14px; }
+    .proj-card .proj-thumb { display: none; }
+    .btn { border-color: #000; color: #000; }
+    a { color: #000; text-decoration: underline; }
+    a[href^="http"]::after, a[href^="mailto"]::after { content: " (" attr(href) ")"; font-size: 12px; word-break: break-all; }
+    hr, footer { border-color: #bbb; }
+  }
+  footer {
+    padding: 24px 0 60px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--faint);
+  }
+</style>
 </head>
 <body>
-<p>This page has moved to <a href="../work/">mazhar-rajani.github.io/work</a>.</p>
+<div class="wrap">
+
+  <header>
+    <h1>Training simulations, XR and 3D apps in Unity</h1>
+    <p class="intro">I'm Mazhar Rajani, a freelance Unity developer with 8+ years in XR and interactive 3D. I take on remote contract work, anything from a full build to a single feature. My work includes VR and AR training, 3D that opens in a browser, and games on Google Play.</p>
+    <div class="links">
+      <a href="mailto:mazharrajani@gmail.com">mazharrajani@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mazharrajani" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Mazhar-Rajani" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.fiverr.com/mazharrajani" target="_blank" rel="noopener">Fiverr</a>
+    </div>
+    <p class="header-cta"><a class="btn" href="https://calendly.com/mazharrajani" target="_blank" rel="noopener">Book a 15-minute call</a></p>
+  </header>
+
+  <hr>
+
+  <section>
+    <h2>Some projects I've worked on</h2>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://play.google.com/store/apps/details?id=com.halfcarrot.wordsearch" target="_blank" rel="noopener" aria-label="Word Search: Painted Places"><img src="../assets/img/wordsearch.jpg" alt="Word Search: Painted Places" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Word Search: Painted Places</h3>
+        <p class="proj-desc">My own word search game, live on Google Play. 1,000 hand-made puzzles across 52 painted themes, no timers, and an album of painted scenes to fill. <a href="https://play.google.com/store/apps/details?id=com.halfcarrot.wordsearch" target="_blank" rel="noopener">Play Store &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://play.google.com/store/apps/details?id=com.halfcarrot.festivalcoloring" target="_blank" rel="noopener" aria-label="Festival Coloring"><img src="../assets/img/festival.jpg" alt="Festival Coloring" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Festival Coloring</h3>
+        <p class="proj-desc">My own coloring game for kids, live on Google Play. 50+ pages for festivals like Diwali, Eid and Christmas. <a href="https://play.google.com/store/apps/details?id=com.halfcarrot.festivalcoloring" target="_blank" rel="noopener">Play Store &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://youtu.be/l0HwZQnCMjs" target="_blank" rel="noopener" aria-label="Surgical Precision Tool Training"><img src="../assets/img/surgical.jpg" alt="Surgical Precision Tool Training" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Surgical Precision Tool Training</h3>
+        <p class="proj-desc">Interactive 3D training where medical staff learn to handle surgical instruments before using them on patients. <a href="https://youtu.be/l0HwZQnCMjs" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://youtu.be/McCpcAu6lIw" target="_blank" rel="noopener" aria-label="Virtual Telehealth Training"><img src="../assets/img/telehealth.jpg" alt="Virtual Telehealth Training" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Virtual Telehealth Training</h3>
+        <p class="proj-desc">Doctors practice remote consultations with responsive 3D virtual patients and get feedback after each session. <a href="https://youtu.be/McCpcAu6lIw" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://youtu.be/8nEA7HbXSIw" target="_blank" rel="noopener" aria-label="3D Stall Booking"><img src="../assets/img/stallbooking.jpg" alt="3D Stall Booking" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">3D Stall Booking</h3>
+        <p class="proj-desc">Exhibitors walk through a 3D exhibition hall and book their stall directly, instead of reading a flat floor plan. <a href="https://youtu.be/8nEA7HbXSIw" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://youtu.be/4pJSFAe9ZhQ" target="_blank" rel="noopener" aria-label="AR Solar System"><img src="../assets/img/solar.png" alt="AR Solar System" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">AR Solar System</h3>
+        <p class="proj-desc">An AR app that puts a moving solar system on a classroom desk, used by Dorado Learning. <a href="https://youtu.be/4pJSFAe9ZhQ" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://youtu.be/yHi07J7wmMo" target="_blank" rel="noopener" aria-label="Indoor Navigation System"><img src="../assets/img/indoornav.jpg" alt="Indoor Navigation System" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Indoor Navigation System</h3>
+        <p class="proj-desc">AR wayfinding that draws the route onto the camera view in large buildings like airports, malls and hospitals. <a href="https://youtu.be/yHi07J7wmMo" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+      <div class="proj-card">
+        <a class="proj-thumb" href="https://youtu.be/WLIrNj_RfYg" target="_blank" rel="noopener" aria-label="Interactive Wind Turbine"><img src="../assets/img/windturbine.jpg" alt="Interactive Wind Turbine" loading="lazy" width="1280" height="800"></a>
+        <h3 class="proj-title">Interactive Wind Turbine</h3>
+        <p class="proj-desc">A wind turbine you can pull apart in the browser to see how the parts work together. <a href="https://youtu.be/WLIrNj_RfYg" target="_blank" rel="noopener">Watch &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>How projects work</h2>
+    <ul class="work-list">
+      <li>
+        <span class="title">Direct contact</span>
+        <span class="detail">You work with me directly, from the first call to handover. I reply fast, give realistic timelines, and tell you early if something is going to slip.</span>
+      </li>
+      <li>
+        <span class="title">How the work is priced</span>
+        <span class="detail">Short projects are fixed-price, quoted once the scope is clear. Longer ones run as a monthly retainer, and day rates cover small tasks and add-on work. Ask for my rates and I'll send them.</span>
+      </li>
+      <li>
+        <span class="title">Terms</span>
+        <span class="detail">Fixed-price work is 40% upfront and the rest on milestones; retainers are billed at the start of each month. Two revision rounds per milestone. Source code and IP transfer to you on final payment. I sign NDAs before you share anything sensitive.</span>
+      </li>
+    </ul>
+  </section>
+  <hr>
+  <section>
+    <h2>What I'm usually hired for</h2>
+    <ul class="work-list">
+      <li>
+        <span class="title">VR and AR training</span>
+        <span class="detail">Medical training for surgical instruments and remote consultations, AR wayfinding inside large buildings, and AR apps for classrooms.</span>
+      </li>
+      <li>
+        <span class="title">Mobile games</span>
+        <span class="detail">Casual and kids' games for Google Play, including my own Word Search: Painted Places and Festival Coloring.</span>
+      </li>
+      <li>
+        <span class="title">3D apps for businesses</span>
+        <span class="detail">Interactive 3D that helps a business sell or explain something, like an exhibition booking app where exhibitors walk the hall before picking a stall, or a machine you can take apart on a web page.</span>
+      </li>
+      <li>
+        <span class="title">Tools and visual effects</span>
+        <span class="detail">Editor tools, shaders and visual effects built to be reused across a client's projects, instead of rebuilt each time.</span>
+      </li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Working inside your process</h2>
+    <p>I've worked in-house and as an outside contractor, so I know how a project looks from both sides. I work inside your existing process and tools rather than bringing my own.</p>
+    <div class="tools-grid">
+      <div>
+        <h3>Project management</h3>
+        <p>Jira, Trello, Notion, ClickUp, or whatever you already use for tickets and sprints.</p>
+      </div>
+      <div>
+        <h3>AI-assisted development</h3>
+        <p>I use Copilot, Cursor, Claude and similar tools day to day, but I don't let them write code I don't understand.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>What clients say about working with me</h2>
+    <p>I hold a 5.0 rating across 65 client reviews.</p>
+    <div class="quote-grid">
+    <blockquote>
+      <p>"Once again expectations were exceeded. Best freelance hire I've had and I've had a lot! Willing to change course if something isn't working, very patient, amazing problem solver."</p>
+      <cite>Repeat client, Fiverr</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Mazhar went above & beyond expectations. My request was very specific - his price was reasonable & the work delivered was exactly as specified. He even included a document with additional information to ensure easy implementation."</p>
+      <cite>Client, United States, Fiverr</cite>
+    </blockquote>
+    <blockquote>
+      <p>"We had a fantastic experience working with Mazhar! He went above and beyond on the project and found a solution to a problem that was new to him. He takes challenges head-on and makes it a point to deliver."</p>
+      <cite>Monal Jaiswani, Founder, LeadUpp</cite>
+    </blockquote>
+    <blockquote>
+      <p>"THE BEST OF THE BEST!! Amazing experience! He delivered everything on time, was super friendly and helpful, answered all my questions quickly, and went above and beyond my expectations. Very fair price also."</p>
+      <cite>Client, Spain, Fiverr</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Really impressed by professional approach to work and flexibility."</p>
+      <cite>Kushal Mudaliyar, Co-Founder, SwachhAI</cite>
+    </blockquote>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="cta">
+    <h2>Got something in mind?</h2>
+    <p>A 15-minute call is usually enough to tell whether it's a fit. If you'd rather write first, email <a href="mailto:mazharrajani@gmail.com">mazharrajani@gmail.com</a> with a short description of the project.</p>
+    <p><a class="btn" href="https://calendly.com/mazharrajani" target="_blank" rel="noopener">Book a 15-minute call</a></p>
+  </section>
+
+  <footer>© 2026 Mazhar Rajani</footer>
+
+</div>
 </body>
 </html>
